@@ -1,0 +1,45 @@
+{
+ "history": [
+  {
+   "action": "error",
+   "campaign": "ortho",
+   "started_at": "2026-10-04T20:56:18.739104+00:00",
+   "finished_at": "2026-10-04T20:56:18.831036+00:00",
+   "exit_code": 2,
+   "command": "python3 /home/z/my-project/scripts/ortho/tg_forward_ortho.py",
+   "stdout_tail": "",
+   "stderr_tail": "python3: can't open file '/home/z/my-project/scripts/ortho/tg_forward_ortho.py': [Errno 2] No such file or directory\n",
+   "next_due": null,
+   "reason": "",
+   "errors": [
+    "executor exit=2"
+   ]
+  },
+  {
+   "action": "ran",
+   "campaign": "ortho",
+   "started_at": "2026-10-04T20:56:29.785765+00:00",
+   "finished_at": "2026-10-04T20:57:01.620888+00:00",
+   "exit_code": 0,
+   "command": "python3 /home/z/my-project/repos/tg-campaign-toolkit/scripts/ortho/tg_forward_ortho.py",
+   "stdout_tail": "wd\": 0, \"err\": 0, \"copy\": false}, \"ortho\": {\"s\": \"idle\", \"last\": 222, \"max\": 222, \"fwd\": 0, \"err\": 0, \"copy\": false}, \"orthopedicsbank\": {\"s\": \"idle\", \"last\": 107, \"max\": 107, \"fwd\": 0, \"err\": 0, \"copy\": false}, \"dr_zaky_ortho\": {\"s\": \"idle\", \"last\": 14058, \"max\": 14058, \"fwd\": 0, \"err\": 0, \"copy\": false}, \"id1881128034\": {\"s\": \"idle\", \"last\": 427, \"max\": 427, \"fwd\": 0, \"err\": 0, \"copy\": false}, \"id1131559169\": {\"s\": \"idle\", \"last\": 64058, \"max\": 64058, \"fwd\": 0, \"err\": 0, \"copy\": false}, \"id1927197663\": {\"s\": \"idle\", \"last\": 6934, \"max\": 6934, \"fwd\": 0, \"err\": 0, \"copy\": false}, \"id1240679442\": {\"s\": \"idle\", \"last\": 64171, \"max\": 64171, \"fwd\": 0, \"err\": 0, \"copy\": false}, \"id1414259811\": {\"s\": \"idle\", \"last\": 15116, \"max\": 15116, \"fwd\": 0, \"err\": 0, \"copy\": false}, \"id1085448232\": {\"s\": \"idle\", \"last\": 5815, \"max\": 5815, \"fwd\": 0, \"err\": 0, \"copy\": false}, \"id1071108801\": {\"s\": \"idle\", \"last\": 15247, \"max\": 15247, \"fwd\": 0, \"err\": 0, \"copy\": false}, \"id1113204556\": {\"s\": \"idle\", \"last\": 110, \"max\": 110, \"fwd\": 0, \"err\": 0, \"copy\": false}, \"orthobooksandlectures\": {\"s\": \"idle\", \"last\": 110, \"max\": 110, \"fwd\": 0, \"err\": 0, \"copy\": false}, \"orthopaedicc\": {\"s\": \"idle\", \"last\": 1092, \"max\": 1091, \"fwd\": 1, \"err\": 0, \"copy\": false}, \"orthoread\": {\"s\": \"idle\", \"last\": 380, \"max\": 380, \"fwd\": 0, \"err\": 0, \"copy\": false}, \"zaky_ortho_quiz_pro\": {\"s\": \"idle\", \"last\": 370, \"max\": 370, \"fwd\": 0, \"err\": 0, \"copy\": false}, \"id1443630404\": {\"s\": \"idle\", \"last\": 3489, \"max\": 3489, \"fwd\": 0, \"err\": 0, \"copy\": false}, \"ymp_ortho_qbank\": {\"s\": \"idle\", \"last\": 841, \"max\": 841, \"fwd\": 0, \"err\": 0, \"copy\": false}, \"id1419835431\": {\"s\": \"idle\", \"last\": 15592, \"max\": 15592, \"fwd\": 0, \"err\": 0, \"copy\": false}, \"id2102386156\": {\"s\": \"idle\", \"last\": 1039, \"max\": 1039, \"fwd\": 0, \"err\": 0, \"copy\": false}, \"id2095012467\": {\"s\": \"idle\", \"last\": 1584, \"max\": 1584, \"fwd\": 0, \"err\": 0, \"copy\": false}, \"orthoconsultantprep\": {\"s\": \"idle\", \"last\": 80, \"max\": 80, \"fwd\": 0, \"err\": 0, \"copy\": false}}}\n",
+   "stderr_tail": "",
+   "next_due": null,
+   "reason": "",
+   "errors": []
+  },
+  {
+   "action": "skipped_not_due",
+   "campaign": "ortho",
+   "started_at": "2026-10-04T20:57:31.922762+00:00",
+   "finished_at": "2026-10-04T20:57:32.006048+00:00",
+   "exit_code": null,
+   "command": "",
+   "stdout_tail": "",
+   "stderr_tail": "",
+   "next_due": null,
+   "reason": "آخر تشغيل 2026-10-04T20:56:29.785765+00:00؛ الاستحقاق بعد 6 ساعة",
+   "errors": []
+  }
+ ]
+}
