@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "marathon-suite"
+version = "0.1.0"
+description = "Thin coordinator for the marathon suite — pins ocr-core + translation-core and owns the bridge contract"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+    "marathon-ocr-core @ git+https://github.com/DrAbdulmalek/ocr-core.git@v0.4.0",
+    "marathon-translation-core @ git+https://github.com/DrAbdulmalek/translation-core.git@v0.1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
