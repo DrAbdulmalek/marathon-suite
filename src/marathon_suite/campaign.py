@@ -150,7 +150,9 @@ class Campaign:
 
     def is_due(self, now: Optional[datetime] = None,
                last_run: Optional[datetime] = None) -> bool:
-        """هل الحملة مستحقة للسحب الآن؟ (جردل زمني بسيط: now >= due_at)"""
+        """هل الحملة مستحقة للسحب الآن؟ (أول تشغيل = مستحقة فورًا)"""
+        if last_run is None:
+            return True
         moment = now or datetime.now(timezone.utc)
         return moment >= self.due_at(last_run)
 

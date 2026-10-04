@@ -1,0 +1,29 @@
+name: ortho-marathon-status
+
+# تقرير حالة ماراثون العظام كل 6 ساعات — report-only بلا أسرار.
+# التنفيذ الفعلي (السحب والنشر) يعمل في بيئة العمل حيث جلسة تيليجرام
+# وملفات .secrets — هذا السير يوثّق الاستحقاق والإحصاءات فقط.
+on:
+  schedule:
+    - cron: "7 */6 * * *"   # بعد دورة السحب بقليل (كل 6 ساعات عند الدقيقة 7)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps (loader only — no pinned cores needed)
+        run: pip install pyyaml
+      - name: Ortho campaign status report
+        run: |
+          PYTHONPATH=src python -m marathon_suite.runner \
+            --campaign campaigns/ortho \
+            --state /tmp/ortho-runner-status.json \
+            --status | tee "$GITHUB_STEP_SUMMARY"
