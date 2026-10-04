@@ -8,8 +8,18 @@
 3. **بوابة تكامل**: اختبارات حقيقية تُشغَّل على النواتين المثبتتين
    فعليًا من وسومهما — أي كسر توافق يُرى هنا قبل أن يصل للمستهلكين.
 """
-from .bridge import TranslationPlan, build_translation_plan
+# صادرات كسولة (PEP 562): تحميل الحملات لا يتطلب النواتين المثبّتَين؛
+# الجسر يُستورد عند أول لمسة فقط (بيئة التكامل حيث ocr-core وtranslation-core جاهزان).
+__all__ = ["TranslationPlan", "build_translation_plan",
+           "Campaign", "CampaignError", "Source", "__version__"]
 
-__version__ = "0.1.0"
 
-__all__ = ["TranslationPlan", "build_translation_plan", "__version__"]
+def __getattr__(name: str):
+    if name in ("TranslationPlan", "build_translation_plan"):
+        from .bridge import TranslationPlan as _TP, build_translation_plan as _btp
+        return {"TranslationPlan": _TP,
+                "build_translation_plan": _btp}[name]
+    if name in ("Campaign", "CampaignError", "Source"):
+        from . import campaign as _c
+        return getattr(_c, name)
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")

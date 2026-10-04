@@ -1,0 +1,457 @@
+specialty: orthopedics
+count: 38
+sources:
+- name: Orthopedic Surgery Learning
+  handle: '@ortho_ar'
+  tme_link: https://t.me/ortho_ar
+  kind: channel
+  audience: 16359
+  origin: user_list
+  notes: أكبر قناة تعليم ظاهرة في نتائج البحث
+  title_verified: Orthopedic Surgery Learning
+  audience_verified: 16 371 subscribers
+  last_verified: '2026-10-05'
+  ingest_status: active
+- name: Orthopedic courses
+  handle: '@orthopaedic_courses'
+  tme_link: https://t.me/orthopaedic_courses
+  kind: channel
+  audience: 5318
+  origin: user_list
+  notes: كورسات عظام
+  title_verified: Orthopedic courses
+  audience_verified: 5 324 subscribers
+  last_verified: '2026-10-05'
+  ingest_status: active
+- name: Orthopedic books
+  handle: '@orthopedic_book'
+  tme_link: https://t.me/orthopedic_book
+  kind: channel
+  audience: 8317
+  origin: user_list
+  notes: كتب عظام
+  title_verified: Orthopedic books
+  audience_verified: 8 392 subscribers
+  last_verified: '2026-10-05'
+  ingest_status: active
+- name: Orthopaedic Academy 👑👑
+  handle: '@OrthopaedicAcademy'
+  tme_link: https://t.me/OrthopaedicAcademy
+  kind: channel
+  audience: 3808
+  origin: user_list
+  notes: ''
+  title_verified: Orthopaedic Academy 🧑‍🎓👨‍🎓
+  audience_verified: 3 810 members, 153 online
+  last_verified: '2026-10-05'
+  ingest_status: active
+- name: OrthoShare-5AO Orthopedics (ort…
+  handle: '@orthoShare5aotexts'
+  tme_link: https://t.me/orthoShare5aotexts
+  kind: group
+  audience: 4340
+  origin: user_list
+  notes: مجموعة عامة قابلة للسحب (لديها معرف)
+  title_verified: OrthoShare-5AO Orthopedics (orthopaedic) Textbooks &amp;Texts
+  audience_verified: 4 355 members, 263 online
+  last_verified: '2026-10-05'
+  ingest_status: active
+- name: OrthoPoLLs
+  handle: '@OrthoPoLLs'
+  tme_link: https://t.me/OrthoPoLLs
+  kind: channel
+  audience: 12042
+  origin: screenshot
+  notes: قناة استبيانات/MCQs
+  ingest_status: active
+  last_verified: 2026-10-04 (screenshot transcription)
+- name: Dr Massoud MD. Study Group Ort…
+  handle: '@drmassoudstudygroup'
+  tme_link: https://t.me/drmassoudstudygroup
+  kind: group
+  audience: 10821
+  origin: user_list
+  notes: مجموعة دراسية عامة
+  title_verified: Dr Massoud MD. Study Group Orthopedic and Spine Surgery
+  audience_verified: 10 919 members, 397 online
+  last_verified: '2026-10-05'
+  ingest_status: active
+- name: Zaky Ortho Files
+  handle: '@zaky_ortho_files'
+  tme_link: https://t.me/zaky_ortho_files
+  kind: channel
+  audience: 8468
+  origin: screenshot
+  notes: ملفات د. زكي
+  ingest_status: active
+  last_verified: 2026-10-04 (screenshot transcription)
+- name: ORTHOFILES
+  handle: '@OrthoFileS'
+  tme_link: https://t.me/OrthoFileS
+  kind: channel
+  audience: 22755
+  origin: screenshot
+  notes: الأكبر عددًا بين النتائج (ملفات)
+  ingest_status: active
+  last_verified: 2026-10-04 (screenshot transcription)
+- name: OrthoBoX
+  handle: '@OrthoBoX'
+  tme_link: https://t.me/OrthoBoX
+  kind: group
+  audience: 8645
+  origin: screenshot
+  notes: مجموعة عامة
+  ingest_status: active
+  last_verified: 2026-10-04 (screenshot transcription)
+- name: OrthoViVa
+  handle: '@orthoviva'
+  tme_link: https://t.me/orthoviva
+  kind: channel
+  audience: 4268
+  origin: screenshot
+  notes: ''
+  ingest_status: active
+  last_verified: 2026-10-04 (screenshot transcription)
+- name: OrthoTALK
+  handle: '@OrthoTalK'
+  tme_link: https://t.me/OrthoTalK
+  kind: group
+  audience: 6512
+  origin: screenshot
+  notes: مجموعة نقاش عامة
+  ingest_status: active
+  last_verified: 2026-10-04 (screenshot transcription)
+- name: ORTHOPAEDICS HUBs
+  handle: '@OrthopaedicsHUBs'
+  tme_link: https://t.me/OrthopaedicsHUBs
+  kind: channel
+  audience: 3806
+  origin: screenshot
+  notes: ''
+  ingest_status: active
+  last_verified: 2026-10-04 (screenshot transcription)
+- name: Nile hospital Ortho Dept.
+  handle: '@nileortho'
+  tme_link: https://t.me/nileortho
+  kind: group
+  audience: 1095
+  origin: screenshot
+  notes: قسم العظام - مستشفى النيل
+  ingest_status: active
+  last_verified: 2026-10-04 (screenshot transcription)
+- name: Zaky Ortho Videos & Podcasts
+  handle: '@zaky_ortho_videos'
+  tme_link: https://t.me/zaky_ortho_videos
+  kind: channel
+  audience: null
+  origin: screenshot
+  notes: عدد المشتركين غير ظاهر في الصورة
+  ingest_status: active
+  last_verified: 2026-10-04 (screenshot transcription)
+- name: Orthopaedic
+  handle: '@ortho'
+  tme_link: https://t.me/ortho
+  kind: channel
+  audience: 9831
+  origin: screenshot
+  notes: معرف قصير جدًا - تحقق منه
+  ingest_status: active
+  last_verified: 2026-10-04 (screenshot transcription)
+- name: ortho question bank
+  handle: '@orthopedicsbank'
+  tme_link: https://t.me/orthopedicsbank
+  kind: channel
+  audience: 1179
+  origin: screenshot
+  notes: بنك أسئلة
+  ingest_status: active
+  last_verified: 2026-10-04 (screenshot transcription)
+- name: Zaky Ortho
+  handle: '@dr_zaky_ortho'
+  tme_link: https://t.me/dr_zaky_ortho
+  kind: channel
+  audience: 13345
+  origin: user_list
+  notes: القناة الرئيسية لد. زكي
+  title_verified: Zaky Ortho
+  audience_verified: 13 404 subscribers
+  last_verified: '2026-10-05'
+  ingest_status: active
+- name: orthopedic books
+  handle: null
+  tme_link: null
+  kind: channel
+  audience: 9388
+  origin: screenshot
+  notes: قد تكون نفس @orthopedic_book لكن الأعداد مختلفة (8317 مقابل 9417) - يلزم التحقق | قناة بلا معرف
+    عام — تُسحب عبر tg_id+access_hash (بحث داخلي)
+  ingest_status: active
+  ref_mode: id_hash
+  title_verified: orthopedic books
+  audience_verified: 9388 participants
+  last_verified: 2026-10-05 (live search + read probe)
+  ref: tg_id:1881128034
+  requires_membership: true
+- name: Ortho TV - The Orthopaedic Vide…
+  handle: null
+  tme_link: null
+  kind: group
+  audience: 6004
+  origin: screenshot
+  notes: قناة/مجموعة فيديو - المعرف غير ظاهر | قناة بلا معرف عام — تُسحب عبر tg_id+access_hash (بحث داخلي)
+  ingest_status: active
+  ref_mode: id_hash
+  title_verified: Ortho TV - The Orthopaedic Video Channel
+  audience_verified: 6004 participants
+  last_verified: 2026-10-05 (live search + read probe)
+  ref: tg_id:1131559169
+  requires_membership: true
+- name: Dr Zaky Ortho Group
+  handle: null
+  tme_link: null
+  kind: group
+  audience: 2858
+  origin: screenshot
+  notes: ظهرت أيضًا أسفل الصورة الأولى مقطوعة | قناة بلا معرف عام — تُسحب عبر tg_id+access_hash (بحث داخلي)
+  ingest_status: active
+  ref_mode: id_hash
+  title_verified: Dr Zaky Ortho Group
+  audience_verified: 2858 participants
+  last_verified: 2026-10-05 (live search + read probe)
+  ref: tg_id:1927197663
+  requires_membership: true
+- name: TLS ORTHOPAEDIC KNOWLEDGE BANK
+  handle: null
+  tme_link: null
+  kind: group
+  audience: 683
+  origin: screenshot
+  notes: قناة بلا معرف عام — تُسحب عبر tg_id+access_hash (بحث داخلي)
+  ingest_status: active
+  ref_mode: id_hash
+  title_verified: TLS ORTHOPAEDIC KNOWLEDGE BANK
+  audience_verified: 683 participants
+  last_verified: 2026-10-05 (live search + read probe)
+  ref: tg_id:1240679442
+  requires_membership: true
+- name: Orthopedic in short notes
+  handle: null
+  tme_link: null
+  kind: group
+  audience: 1094
+  origin: screenshot
+  notes: قناة بلا معرف عام — تُسحب عبر tg_id+access_hash (بحث داخلي)
+  ingest_status: active
+  ref_mode: id_hash
+  title_verified: Orthopedic in short notes
+  audience_verified: 1094 participants
+  last_verified: 2026-10-05 (live search + read probe)
+  ref: tg_id:1414259811
+  requires_membership: true
+- name: Orthopaedic Books
+  handle: null
+  tme_link: null
+  kind: group
+  audience: 552
+  origin: screenshot
+  notes: مختلفة عن @orthopedic_book | قناة بلا معرف عام — تُسحب عبر tg_id+access_hash (بحث داخلي)
+  ingest_status: active
+  ref_mode: id_hash
+  title_verified: Orthopaedic Books
+  audience_verified: 552 participants
+  last_verified: 2026-10-05 (live search + read probe)
+  ref: tg_id:1085448232
+  requires_membership: true
+- name: ORTHOPAEDIC SURGERY UPDATE
+  handle: null
+  tme_link: null
+  kind: group
+  audience: 2107
+  origin: screenshot
+  notes: قناة بلا معرف عام — تُسحب عبر tg_id+access_hash (بحث داخلي)
+  ingest_status: active
+  ref_mode: id_hash
+  title_verified: ORTHOPAEDIC SURGERY UPDATE
+  audience_verified: 2107 participants
+  last_verified: 2026-10-05 (live search + read probe)
+  ref: tg_id:1071108801
+  requires_membership: true
+- name: Orthopedic Books and Questios
+  handle: null
+  tme_link: null
+  kind: channel
+  audience: 419
+  origin: screenshot
+  notes: الاسم كما ورد حرفيًا (على الأرجح Questions) | قناة بلا معرف عام — تُسحب عبر tg_id+access_hash
+    (بحث داخلي)
+  ingest_status: active
+  ref_mode: id_hash
+  title_verified: Orthopedic Books and Questios
+  audience_verified: 419 participants
+  last_verified: 2026-10-05 (live search + read probe)
+  ref: tg_id:1113204556
+  requires_membership: true
+- name: Ortho Books and Journals
+  handle: null
+  tme_link: null
+  kind: group
+  audience: null
+  origin: screenshot
+  notes: مجموعة خاصة - لا يمكن السحب منها دون الانضمام إليها
+  ingest_status: blocked_private
+- name: Orthopaedics Books Sharing
+  handle: null
+  tme_link: null
+  kind: group
+  audience: null
+  origin: screenshot
+  notes: مجموعة خاصة - لا يمكن السحب منها دون الانضمام إليها
+  ingest_status: blocked_private
+- name: orthopedic surgery books
+  handle: '@orthobooksandlectures'
+  tme_link: https://t.me/orthobooksandlectures
+  kind: channel
+  audience: 21145
+  origin: sub_source
+  origin_type: link_mention
+  parent: '@scan'
+  hop: 1
+  notes: مصدر فرعي مكتشف آليًا داخل قناة المصدر (رابط موثوق داخل رسائل القناة)
+  ingest_status: active
+  last_verified: 2026-10-05 (live subsource scan)
+  ref_mode: username
+- name: Orthopaedic discussion
+  handle: '@orthopaedicc'
+  tme_link: https://t.me/orthopaedicc
+  kind: channel
+  audience: 1941
+  origin: sub_source
+  origin_type: link_mention
+  parent: '@orthopaedicacademy'
+  hop: 1
+  notes: مصدر فرعي مكتشف آليًا داخل قناة المصدر (رابط موثوق داخل رسائل القناة)
+  ingest_status: active
+  last_verified: 2026-10-05 (live subsource scan)
+  ref_mode: username
+- name: OʀᴛʜᴏRᴇᴀD
+  handle: '@OrthoReaD'
+  tme_link: https://t.me/OrthoReaD
+  kind: channel
+  audience: 1480
+  origin: sub_source
+  origin_type: link_mention
+  parent: '@orthofiles'
+  hop: 1
+  notes: مصدر فرعي مكتشف آليًا داخل قناة المصدر (رابط موثوق داخل رسائل القناة)
+  ingest_status: active
+  last_verified: 2026-10-05 (live subsource scan)
+  ref_mode: username
+- name: Zaky Ortho Quiz Pro
+  handle: '@zaky_ortho_quiz_pro'
+  tme_link: https://t.me/zaky_ortho_quiz_pro
+  kind: channel
+  audience: 800
+  origin: sub_source
+  origin_type: link_mention
+  parent: '@dr_zaky_ortho'
+  hop: 1
+  notes: مصدر فرعي مكتشف آليًا داخل قناة المصدر (رابط موثوق داخل رسائل القناة)
+  ingest_status: active
+  last_verified: 2026-10-05 (live subsource scan)
+  ref_mode: username
+- name: OrthoFileS Chat
+  handle: null
+  tme_link: null
+  kind: group
+  audience: 638
+  origin: sub_source
+  origin_type: linked_chat
+  parent: '@orthofiles'
+  hop: 1
+  notes: مصدر فرعي مكتشف آليًا داخل قناة المصدر (مجموعة النقاش المرتبطة) — سحب عبر tg_id+access_hash
+  ingest_status: active
+  last_verified: 2026-10-05 (live subsource scan)
+  ref_mode: id_hash
+  ref: tg_id:1443630404
+  requires_membership: true
+- name: YourMedPass - Orthopedic QBank
+  handle: '@YMP_ORTHO_QBANK'
+  tme_link: https://t.me/YMP_ORTHO_QBANK
+  kind: group
+  audience: 376
+  origin: sub_source
+  origin_type: link_mention
+  parent: '@scan'
+  hop: 1
+  notes: مصدر فرعي مكتشف آليًا داخل قناة المصدر (رابط موثوق داخل رسائل القناة)
+  ingest_status: active
+  last_verified: 2026-10-05 (live subsource scan)
+  ref_mode: username
+- name: OrthoPoLLs Chat
+  handle: null
+  tme_link: null
+  kind: group
+  audience: 299
+  origin: sub_source
+  origin_type: linked_chat
+  parent: '@orthopolls'
+  hop: 1
+  notes: مصدر فرعي مكتشف آليًا داخل قناة المصدر (مجموعة النقاش المرتبطة) — سحب عبر tg_id+access_hash
+  ingest_status: active
+  last_verified: 2026-10-05 (live subsource scan)
+  ref_mode: id_hash
+  ref: tg_id:1419835431
+  requires_membership: true
+- name: OʀᴛʜᴏVɪVᴀ chat
+  handle: null
+  tme_link: null
+  kind: group
+  audience: 196
+  origin: sub_source
+  origin_type: linked_chat
+  parent: '@orthoviva'
+  hop: 1
+  notes: مصدر فرعي مكتشف آليًا داخل قناة المصدر (مجموعة النقاش المرتبطة) — سحب عبر tg_id+access_hash
+  ingest_status: active
+  last_verified: 2026-10-05 (live subsource scan)
+  ref_mode: id_hash
+  ref: tg_id:2102386156
+  requires_membership: true
+- name: Zaky Ortho Files Group
+  handle: null
+  tme_link: null
+  kind: group
+  audience: 112
+  origin: sub_source
+  origin_type: linked_chat
+  parent: '@zaky_ortho_files'
+  hop: 1
+  notes: مصدر فرعي مكتشف آليًا داخل قناة المصدر (مجموعة النقاش المرتبطة) — سحب عبر tg_id+access_hash
+  ingest_status: active
+  last_verified: 2026-10-05 (live subsource scan)
+  ref_mode: id_hash
+  ref: tg_id:2095012467
+  requires_membership: true
+- name: Orthopaedics Consultant Interview Prep
+  handle: '@orthoconsultantprep'
+  tme_link: https://t.me/orthoconsultantprep
+  kind: channel
+  audience: 69
+  origin: sub_source
+  origin_type: link_mention
+  parent: '@scan'
+  hop: 1
+  notes: مصدر فرعي مكتشف آليًا داخل قناة المصدر (رابط موثوق داخل رسائل القناة)
+  ingest_status: active
+  last_verified: 2026-10-05 (live subsource scan)
+  ref_mode: username
+excluded:
+- name: Самарская митрополия
+  handle: OrthodoxSamarа
+  audience: 1537
+  reason: 'غير طبية إطلاقًا: صفحة كنسية أرثوذكسية روسية ظهرت فقط لأن كلمة Orthodox تحتوي Ortho'
+- name: Orthodontic Books and Lectures
+  handle: orthobooks
+  audience: 27202
+  reason: تقويم الأسنان (Orthodontics) وليس الجراحة العظمية - طبية لكن تخصص مختلف؛ أضفها يدويًا إن أردت
+    توسيع التغطية

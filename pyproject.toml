@@ -4,11 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "marathon-suite"
-version = "0.1.0"
+version = "0.2.0"
 description = "Thin coordinator for the marathon suite — pins ocr-core + translation-core and owns the bridge contract"
 requires-python = ">=3.10"
 license = {text = "MIT"}
 dependencies = [
+    "pyyaml>=6.0",
     "marathon-ocr-core @ git+https://github.com/DrAbdulmalek/ocr-core.git@v0.4.0",
     "marathon-translation-core @ git+https://github.com/DrAbdulmalek/translation-core.git@v0.1.0",
 ]
