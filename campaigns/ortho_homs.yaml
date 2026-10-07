@@ -1,0 +1,4 @@
+target_channel: '@ortho_homs'
+sources:
+  - repo: 'DrAbdulmalek/arabic-medical-glossary'
+  - repo: 'DrAbdulmalek/omni-medical-dictionaries'
