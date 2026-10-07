@@ -218,3 +218,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# بيانات تشغيلية محلية — خارج git بحسب اتفاقية المنظومة
+state/

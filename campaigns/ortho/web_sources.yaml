@@ -1,0 +1,331 @@
+registered: '2026-09-29'
+purpose: 'طبقة الويب خارج تيليجرام: كتب جامعات سورية + مكتبة نور + TED SRT'
+ingest_decision: active — بطلب المستخدم للسحب الدوري (2026-09-29/10-05)
+sources:
+- id: noor_library
+  kind: site
+  category: ebook_library
+  name: 'مكتبة نور — بحث: قاموس'
+  url: https://www.noor-book.com/?search_for=%D9%82%D8%A7%D9%85%D9%88%D8%B3
+  specialty: قواميس وكتب طبية/لغوية
+  note: 'D3 — تنزيل كل ما يفيد: مستودع الطب، مستودع الترجمة (قواميس)، وبيانات تدريب نماذج الذكاء الاصطناعي'
+  discovered_count: 151
+  ingest_status: active
+- id: ted_srt
+  kind: site
+  category: subtitles
+  name: TED — سلاسل SRT (طبية وعامة)
+  url: https://www.ted.com/talks
+  specialty: ترجمة نصية متوازية EN↔AR
+  note: سحب ترجمات SRT الجديدة كاشفِ موازٍ لمسار translation-core
+  ingest_status: active
+- id: fb_damascus_university
+  kind: page
+  category: official
+  name: جامعة دمشق — الصفحة الرسمية
+  url: https://www.facebook.com/Damas.University/
+  specialty: عام (أدلة الكتب الجامعية وأخبار البيع)
+  note: رسمية؛ تنشر أدلة الكتب الورقية ومراكز بيعها
+  probe:
+    http: '400'
+    status: fb_antibot_400
+    err: ''
+    interpretation: الصفحة حية غالباً (المستخدم وجدها من المتصفح)؛ سحب المحتوى يتطلب جلسة متصفح/أدوات
+      بمحاكاة كاملة — خارج قدرة السحب المجهول حالياً
+  ingest_status: active
+  note_probe_first: true
+- id: fb_damascus_fmee
+  kind: page
+  category: official
+  name: كلية الهندسة الميكانيكية والكهربائية — جامعة دمشق
+  url: https://www.facebook.com/Damascus.FMEE
+  specialty: هندسة ميكانيكية/كهربائية
+  note: أعلنت عن رابط مجموعة كتب الكلية
+  probe:
+    http: '400'
+    status: fb_antibot_400
+    err: ''
+    interpretation: الصفحة حية غالباً (المستخدم وجدها من المتصفح)؛ سحب المحتوى يتطلب جلسة متصفح/أدوات
+      بمحاكاة كاملة — خارج قدرة السحب المجهول حالياً
+  ingest_status: active
+  note_probe_first: true
+- id: fb_homs_arts
+  kind: page
+  category: official
+  name: كلية الآداب والعلوم الإنسانية — جامعة حمص
+  url: https://www.facebook.com/profile.php?id=61577368112143
+  specialty: آداب / برنامج الترجمة
+  note: تنشر كتب إلكترونية لبرامج الكلية
+  probe:
+    http: '400'
+    status: fb_antibot_400
+    err: ''
+    interpretation: الصفحة حية غالباً (المستخدم وجدها من المتصفح)؛ سحب المحتوى يتطلب جلسة متصفح/أدوات
+      بمحاكاة كاملة — خارج قدرة السحب المجهول حالياً
+  ingest_status: active
+  note_probe_first: true
+- id: fb_damascus_sharia
+  kind: page
+  category: official
+  name: كلية الشريعة — جامعة دمشق
+  url: https://www.facebook.com/Sh2oonAlshre3a
+  specialty: شريعة
+  note: نقلت كتبها إلى المستودع الرقمي الجديد للجامعة
+  probe:
+    http: '400'
+    status: fb_antibot_400
+    err: ''
+    interpretation: الصفحة حية غالباً (المستخدم وجدها من المتصفح)؛ سحب المحتوى يتطلب جلسة متصفح/أدوات
+      بمحاكاة كاملة — خارج قدرة السحب المجهول حالياً
+  ingest_status: active
+  note_probe_first: true
+- id: fb_malik_law_library
+  kind: group
+  category: student_services
+  name: مكتبة الملك الإلكترونية (كلية الحقوق — دمشق)
+  url: https://www.facebook.com/groups/470526974357149/
+  specialty: حقوق
+  note: خدمات طلابية + مكتبة إلكترونية خاصة بالكلية
+  probe:
+    http: '400'
+    status: fb_antibot_400
+    err: ''
+    interpretation: الصفحة حية غالباً (المستخدم وجدها من المتصفح)؛ سحب المحتوى يتطلب جلسة متصفح/أدوات
+      بمحاكاة كاملة — خارج قدرة السحب المجهول حالياً
+  ingest_status: active
+  note_probe_first: true
+- id: fb_damascus_law_students
+  kind: group
+  category: student_services
+  name: طلاب كلية الحقوق في دمشق
+  url: https://www.facebook.com/groups/267590419422902/
+  specialty: حقوق
+  note: ''
+  probe:
+    http: '400'
+    status: fb_antibot_400
+    err: ''
+    interpretation: الصفحة حية غالباً (المستخدم وجدها من المتصفح)؛ سحب المحتوى يتطلب جلسة متصفح/أدوات
+      بمحاكاة كاملة — خارج قدرة السحب المجهول حالياً
+  ingest_status: active
+  note_probe_first: true
+- id: fb_jaqal_universities
+  kind: group
+  category: student_services
+  name: كروب الجامعات (المدرس فارس جقل)
+  url: https://www.facebook.com/groups/776408195880451/
+  specialty: عام (تبادل كتب بين الجامعات السورية)
+  note: ''
+  probe:
+    http: '400'
+    status: fb_antibot_400
+    err: ''
+    interpretation: الصفحة حية غالباً (المستخدم وجدها من المتصفح)؛ سحب المحتوى يتطلب جلسة متصفح/أدوات
+      بمحاكاة كاملة — خارج قدرة السحب المجهول حالياً
+  ingest_status: active
+  note_probe_first: true
+- id: fb_swyzana_page
+  kind: page
+  category: educational
+  name: سويزانا التعليمية (صفحة)
+  url: https://www.facebook.com/globallanguage22
+  specialty: عام — كل ما يهم الطالب السوري
+  note: روابط ملفات وكتب جامعية
+  probe:
+    http: '400'
+    status: fb_antibot_400
+    err: ''
+    interpretation: الصفحة حية غالباً (المستخدم وجدها من المتصفح)؛ سحب المحتوى يتطلب جلسة متصفح/أدوات
+      بمحاكاة كاملة — خارج قدرة السحب المجهول حالياً
+  ingest_status: active
+  note_probe_first: true
+- id: fb_ali_maths
+  kind: page
+  category: educational
+  name: ALI MATHS
+  url: https://www.facebook.com/ALI.MATHS.1994
+  specialty: رياضيات
+  note: نشر رابط كتب ومراجع عربية من موقع جامعة تشرين
+  probe:
+    http: '400'
+    status: fb_antibot_400
+    err: ''
+    interpretation: الصفحة حية غالباً (المستخدم وجدها من المتصفح)؛ سحب المحتوى يتطلب جلسة متصفح/أدوات
+      بمحاكاة كاملة — خارج قدرة السحب المجهول حالياً
+  ingest_status: active
+  note_probe_first: true
+- id: fb_ahl_alsham
+  kind: page
+  category: educational
+  name: مبادرة أهل الشام
+  url: https://www.facebook.com/mobadrah.sham
+  specialty: تعليم مفتوح — ريف دمشق
+  note: دعم دراسي يشمل توفير كتب دراسية
+  probe:
+    http: '400'
+    status: fb_antibot_400
+    err: ''
+    interpretation: الصفحة حية غالباً (المستخدم وجدها من المتصفح)؛ سحب المحتوى يتطلب جلسة متصفح/أدوات
+      بمحاكاة كاملة — خارج قدرة السحب المجهول حالياً
+  ingest_status: active
+  note_probe_first: true
+- id: fb_biology_med_library
+  kind: group
+  category: educational
+  name: مكتبة علوم الحياة والطب
+  url: https://www.facebook.com/groups/biology898
+  specialty: طب / علوم حياة
+  note: لها قناة تيليجرام مقابل
+  probe:
+    http: '400'
+    status: fb_antibot_400
+    err: ''
+    interpretation: الصفحة حية غالباً (المستخدم وجدها من المتصفح)؛ سحب المحتوى يتطلب جلسة متصفح/أدوات
+      بمحاكاة كاملة — خارج قدرة السحب المجهول حالياً
+  ingest_status: active
+  note_probe_first: true
+- id: fb_syriana_group
+  kind: group
+  category: educational
+  name: مجموعة سوريانا التعليمية
+  url: https://www.facebook.com/groups/458031161255302
+  specialty: عام
+  note: مقابلة لقناة @Syr_edu
+  probe:
+    http: '400'
+    status: fb_antibot_400
+    err: ''
+    interpretation: الصفحة حية غالباً (المستخدم وجدها من المتصفح)؛ سحب المحتوى يتطلب جلسة متصفح/أدوات
+      بمحاكاة كاملة — خارج قدرة السحب المجهول حالياً
+  ingest_status: active
+  note_probe_first: true
+- id: fb_swyzana_group
+  kind: group
+  category: educational
+  name: مجموعة سويزانا التعليمية
+  url: https://www.facebook.com/groups/geniuses.2025.2029
+  specialty: عام
+  note: ''
+  probe:
+    http: '400'
+    status: fb_antibot_400
+    err: ''
+    interpretation: الصفحة حية غالباً (المستخدم وجدها من المتصفح)؛ سحب المحتوى يتطلب جلسة متصفح/أدوات
+      بمحاكاة كاملة — خارج قدرة السحب المجهول حالياً
+  ingest_status: active
+  note_probe_first: true
+- id: web_createdres
+  kind: site
+  category: esl_resources
+  name: English Created Resources (createdres.com)
+  url: https://createdres.com
+  specialty: English teaching resources PDFs (worksheets, readers)
+  note: نفس علامة freebooks4all; اللغة الإنجليزية للتعلم — يُسحب حسب تعليمات المستخدم
+  filter: unfiltered_esl
+  probe:
+    http: '200'
+    final_url: https://createdres.com/
+    bytes: '281783'
+    status: ok
+  ingest_status: active
+  note_probe_first: false
+- id: social_facebook
+  kind: social
+  category: esl_resources
+  name: Facebook (English Created Resources)
+  url: https://bit.ly/469ZXIu
+  filter: unfiltered_esl
+  specialty: صفحة العلامة على فيسبوك
+  note: bit.ly — يُحل التحويل
+  probe:
+    http: '400'
+    final_url: https://www.facebook.com/share/ZRUXf91aLQtji6Rm/?mibextid=A7sQZp
+    bytes: '1542'
+    status: http_400
+  ingest_status: active
+  note_probe_first: true
+- id: social_pinterest
+  kind: social
+  category: esl_resources
+  name: Pinterest (English Created Resources)
+  url: https://bit.ly/46dYzVh
+  filter: unfiltered_esl
+  specialty: ألواح العلامة
+  note: bit.ly — يُحل التحويل
+  probe:
+    http: '200'
+    final_url: https://www.pinterest.com/createdres/?invite_code=3100a98bd64c4e548140c0074e10b03b&sender=421297877550163966
+    bytes: '1432349'
+    status: ok
+  ingest_status: active
+  note_probe_first: true
+- id: social_instagram
+  kind: social
+  category: esl_resources
+  name: Instagram (English Created Resources)
+  url: https://bit.ly/3WdIday
+  filter: unfiltered_esl
+  specialty: حساب العلامة
+  note: bit.ly — يُحل التحويل
+  probe:
+    http: '429'
+    final_url: https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fcreatedres%3Figsh%3DZ3Njem04eHVyMGl2&is
+    bytes: '0'
+    status: http_429
+  ingest_status: active
+  note_probe_first: true
+- id: social_vk
+  kind: social
+  category: esl_resources
+  name: VK (English Created Resources)
+  url: https://bit.ly/3zOGOjm
+  filter: unfiltered_esl
+  specialty: صفحة العلامة على VK
+  note: bit.ly — يُحل التحويل
+  probe:
+    http: '200'
+    final_url: https://m.vk.com/createdres?fbclid=IwZXh0bgNhZW0CMTEAAR3wzvB3ZB5_hQQ5hFjOjNXSbnSeQRIYjR9o9M2dLGrEYiHiDBmhw9QlRzw_aem_m8b
+    bytes: '102535'
+    status: ok
+  ingest_status: active
+  note_probe_first: true
+- id: social_x
+  kind: social
+  category: esl_resources
+  name: X/Twitter (English Created Resources)
+  url: https://bit.ly/4f8lpSs
+  filter: unfiltered_esl
+  specialty: حساب العلامة
+  note: bit.ly — يُحل التحويل
+  probe:
+    http: '200'
+    final_url: https://x.com/createdres
+    bytes: '163452'
+    status: ok
+  ingest_status: active
+  note_probe_first: true
+- id: noor_book_com
+  kind: site
+  category: medical_translation_dictionaries
+  name: مكتبة نور — قواميس ومعاجم (طب + ترجمة + تغذية نماذج الذكاء الاصطناعي)
+  url: https://www.noor-book.com/?search_for=%D9%82%D8%A7%D9%85%D9%88%D8%B3
+  specialty: قواميس طبية، معاجم ترجمة، مصطلحات ثنائية اللغة (عربي-إنجليزي)
+  filter: noor_harvest
+  note: 'طلب المستخدم 2026-10-05: تنزيل كل ما يفيد تطوير مستودع الطب والترجمة وكل ما يفيد تطوير نماذج
+    الذكاء الاصطناعي. الاكتشاف يعمل عبر scripts/noor_books_v2.py (بحث ?search_for= + وسوم /en/tag/) —
+    الكتالوج: 151 كتابًا (19 عالي الصلة قاموس+طبي). التنزيل الفعلي PDF محجوب بـ Cloudflare Turnstile في
+    البيئة المجهولة (requests + متصفح آلي) — يبقى معلقًا على APP-NOOR-DL بجلسة مصادَقة أو عامل بمتصفح
+    حقيقي. الواجهة تعرض الكتالوج في تبويب نور.'
+  pipeline: scripts/noor_books_v2.py
+  outputs:
+  - download/noor-library/noor_books.json
+  - download/noor-library/noor_books.csv
+  - 'dashboard: تبويب نور (repos/tg-campaign-toolkit/state/noor/noor_books.json)'
+  probe:
+    http: '200'
+    status: discovery_ok_download_cf_gated
+    catalog_books: 151
+    hi_relevance: 19
+    download_endpoint: غير موجود في HTML المجهول (زر JS) — 404 على الأنماط الشائعة /dl/ و /ebook/download/
+  ingest_status: active
+  note_probe_first: false

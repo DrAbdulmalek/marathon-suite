@@ -1,0 +1,36 @@
+campaign: ortho
+title: ماراثون العظام
+specialty: orthopedics
+target_channel:
+  handle: '@ortho_homs'
+  title: Orthobooks_Homs
+  tme_link: https://t.me/ortho_homs
+  audience: 2 subscribers
+  role: destination — كل المحتوى المسحوب يُنشر هنا
+  last_verified: '2026-10-05'
+schedule:
+  pull_interval_hours: 6
+  first_run_backfill: false
+  pull_scope: new_only_since_last_cursor
+  dedup_key:
+  - source_handle
+  - message_id
+  post_mode: forward_with_attribution
+  active_hours: 00:00-24:00
+  note: قيم افتراضية قابلة للتعديل من واجهة المستخدم لاحقًا
+sources_file: sources.yaml
+web_sources_file: web_sources.yaml
+executor:
+  repo: tg-campaign-toolkit
+  path: scripts/ortho/tg_forward_ortho.py
+  config: campaigns/ortho/data/ingest_config.json
+  credentials: .secrets/ عبر متغيرات التشغيل فقط — لا أسرار في المستودع
+translation_lane:
+  bridge: marathon_suite.bridge.build_translation_plan
+  policy: المباراة التامة فقط تُعتمد آليًا؛ غير ذلك needs_human=True
+stats:
+  telegram_total: 38
+  telegram_active: 36
+  sub_sources: 10
+  excluded: 2
+  web_sources: 22
