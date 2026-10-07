@@ -48,4 +48,4 @@ def test_web_sources_have_url(name):
 def test_excluded_entries_have_reason(name):
     c = Campaign.load(CAMPAIGN_DIRS[name])
     for e in c.excluded:
-        assert e.get("reason"), f"استبعاد بلا سبب موثق: {e.get("name", "?")}"
+        assert e.get("reason"), "استبعاد بلا سبب موثق: " + str(e.get("name", "?"))
