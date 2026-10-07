@@ -9,7 +9,7 @@
 | ملف | دوره |
 |------|------|
 | `campaign.yaml` | تعريف الماراثون: الهدف، الجدولة (كل 6 ساعات)، قواعد التكرار والنشر، المنفّذ |
-| `sources.yaml` | سجل مصادر تيليجرام: 40 مصدرًا (36 نشطًا + 2 pending_wiring، 10 منها مصادر فرعية D2) + 3 مستبعَدة |
+| `sources.yaml` | سجل مصادر تيليجرام: 40 مصدرًا (38 نشطًا، 10 منها مصادر فرعية D2) + 3 مستبعَدة |
 | `web_sources.yaml` | طبقة الويب: مكتبة نور (D3) + TED SRT + 20 صفحة جامعية سورية + مرجعا 2026-10-07 (SyrianClinic، LinksMedicus — reference) |
 
 ## دورة التشغيل (كل 6 ساعات)
@@ -49,7 +49,7 @@
 
 بحث مستقل عن مصادر جديدة (تحقق t.me مباشر 2026-10-07) أضاف:
 
-- **قناتان pending_wiring** بانتظار الربط بالمنفذ: **@Orthopaedic_channel**
+- **قناتان active مربوطتان بالمنفذ** (2026-10-07): **@Orthopaedic_channel**
   (3 278 مشتركًا — كتب عظام ورضوح + فيديوهات عمليات) و**@orthopediatric**
   (1 820 — orthopedic books and courses: كتب وكورسات عظام أطفال).
 - **مرجفا ويب reference**: SyrianClinic (المكتبة الطبية السورية — صفحة جراحة
@@ -57,9 +57,9 @@
 - **مستبعَد موثق**: @orthopaedicbook — حساب مستخدم وليس قناة (زر Send Message
   في t.me بدل Preview channel).
 
-الربط يكتمل على جهاز الحملة: إضافة القناتين إلى قائمة USERNAMES في
-ortho_resolve_sources.py (أو مباشرة إلى state/ortho_harvest/sources.json)
-ثم رفع الحالة pending_wiring → active.
+**الربط مكتمل** (2026-10-07 — التزام 994aa40 في gdrive-telegram-tools): القناتان
+دخلتا قائمة USERNAMES بمحرك الحصاد وحُلّتا كقناتين broadcast ودخلتا المسح —
+رُفعت حالتهما هنا إلى active.
 ## الصدق والسلامة
 - مصدر «نشط» بلا handle/url → يُخفَّض إلى `inactive` عند التحميل مع سبب مسجَّل
   (`downgraded_reason`) — لا صمت ولا اختلاق.

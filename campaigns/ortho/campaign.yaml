@@ -32,8 +32,8 @@ translation_lane:
   policy: المباراة التامة فقط تُعتمد آليًا؛ غير ذلك needs_human=True
 stats:
   telegram_total: 40
-  telegram_active: 36
+  telegram_active: 38
   sub_sources: 10
   excluded: 3
   web_sources: 24
-  pending_wiring: 2
+  pending_wiring: 0
