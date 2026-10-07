@@ -329,3 +329,19 @@ sources:
     download_endpoint: غير موجود في HTML المجهول (زر JS) — 404 على الأنماط الشائعة /dl/ و /ebook/download/
   ingest_status: active
   note_probe_first: false
+- id: syrianclinic_library
+  kind: site
+  category: ebook_library
+  name: المكتبة الطبية السورية (SyrianClinic) — صفحة جراحة العظام
+  url: https://www.syrianclinic.com/syrianclinic-medical-library/category/30-orthpedic-surgery.html
+  specialty: جراحة العظام — كتب ومراجع طبية عربية
+  note: 'مصدر مرجعي (بحث 2026-10-07): مكتبة كتب طبية عربية وفيها صفحة مخصصة لجراحة العظام؛ فحص open_url تعطل مؤقتاً (service temporarily unreachable) لكن نتائج البحث تؤكد أن الصفحة حية — يُعاد الفحص قبل أي سحب فعلي'
+  ingest_status: reference
+- id: linksmedicus_directory
+  kind: site
+  category: directory
+  name: LinksMedicus — دليل القنوات الطبية على تيليجرام
+  url: https://www.linksmedicus.com/
+  specialty: دليل مصنّف للقنوات الطبية — أداة اكتشاف مصادر D2 وليس مصدر محتوى مباشر
+  note: 'مرجع اكتشاف (بحث 2026-10-07): يُستخدم مستقبلاً لاكتشاف قنوات طبية جديدة لطبقة D2؛ لا سحب دوري'
+  ingest_status: reference
