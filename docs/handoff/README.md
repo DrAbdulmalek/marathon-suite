@@ -9,6 +9,7 @@
 | الوثيقة | المصدر | الحالة |
 |---|---|---|
 | `2026-10-08-deepseek-handoff-package.md` | محادثة DeepSeek [fx7z2oxgpoiikvgihm](https://chat.deepseek.com/share/fx7z2oxgpoiikvgihm) — الرسالة 151 | ✅ نُفِّذت (ocr-core v0.7.0 + intelli-file-manager) |
+| `2026-10-08-six-conversations-map.md` | 6 محادثات DeepSeek إضافية (12p2…/2873…/48pd…/xaxl…/ijn4…/pqma…) | ✅ نُفِّذت (omni-medical-suite PR #180 + medical-translation-intake جديد + حملة medical-sources) |
 
 ## خريطة محادثة DeepSeek → المستودعات (تنفيذ 2026-10-08)
 

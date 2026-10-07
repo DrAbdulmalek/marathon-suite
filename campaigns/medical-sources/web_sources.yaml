@@ -1,0 +1,40 @@
+# طبقة الويب لحملة medical-sources — مصادر موثقة من محادثة DeepSeek
+# 48pdrk6jj2uqy2li1c. الحالة pending_wiring: لا workers بعد — التوثيق
+# يسبق التنفيذ (نفس نمط قرارات المالك في ortho/translation).
+sources:
+  - name: arabic_pharma_leaflets
+    kind: web
+    ingest_status: pending_wiring
+    url: file://campaigns/medical-sources/data/arabic_pharma_consolidated.txt
+    id: arabic_pharma_leaflets
+    note: 'الملف الموحد — شركات أدوية عربية بنشرات ثنائية اللغة (worker مقترح: leaflet_harvester — تنزيل PDF النشرات AR/EN)'
+  - name: hama_pharma_direct
+    kind: web
+    ingest_status: pending_wiring
+    url: https://hama-pharma.com
+    id: hama_pharma_direct
+    note: 'روابط attachment مباشرة في data/hama_pharma_leaflets.txt — تحقق دوري من ثبات الروابط'
+  - name: bilingual_dictionaries
+    kind: web
+    ingest_status: pending_wiring
+    url: https://archive.org
+    id: bilingual_dictionaries
+    note: 'قواميس/كتب ثنائية (Al-Mawrid, Hans Wehr, Lane, Oxford) — data/bilingual_dictionaries_books.txt — تحقق من dictionaries-csv قبل التحويل'
+  - name: tedx_arabic
+    kind: web
+    ingest_status: pending_wiring
+    url: https://www.ted.com
+    id: tedx_arabic
+    note: 'TEDx + صفحة المترجمين العرب — data/tedx_sources.md — يكمل ted2srt_py في marathon_ted_pipeline'
+  - name: subtitle_downloaders
+    kind: web
+    ingest_status: pending_wiring
+    url: https://ted2srt.org
+    id: subtitle_downloaders
+    note: 'ted2srt/downsub/amara — data/subtitle_downloaders.md'
+  - name: training_corpora
+    kind: web
+    ingest_status: pending_wiring
+    url: https://opus.nlpl.eu
+    id: training_corpora
+    note: 'OPUS/UNCorpus/manythings — data/training_corpora.md — لتدريب نماذج الترجمة'
