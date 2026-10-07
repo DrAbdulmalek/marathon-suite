@@ -30,6 +30,15 @@ executor:
 translation_lane:
   bridge: marathon_suite.bridge.build_translation_plan
   policy: المباراة التامة فقط تُعتمد آليًا؛ غير ذلك needs_human=True
+scope_expansion:
+  owner_decision: '2026-10-07 — قرار المالك: كل الكتب العظمية والملفات، حتى القنوات الطبية العامة، تُجمع إلى @ortho_homs'
+  general_medical:
+    status: pending_implementation
+    source_pool: 'القنوات غير العظمية المكتشفة تلقائياً (pending_review ~299 قناة) في state/ortho_harvest/discovered.jsonl'
+    file_scope: 'كل الملفات — كتب PDF + مستندات doc + وسائط media (لا الكتب فقط)'
+    overlap_rule: 'قناة نشطة في حملة الترجمة (88 مصدراً في campaigns/translation/sources.yaml) تبقى حصرياً في مسار @DrMalekDrive — لا تُسحب إلى ortho_homs'
+    executor_issue: 'gdrive-telegram-tools Issue #2 — التوسعة على المحرك مع عقود Issue #1 (خصوصية/منع تكرار/RPCError)'
+    activation_pr: 'pending — ترقية إلى active بعد الربط الفعلي الموثق بالأعداد الحية (بنمط PR #8/#9)'
 stats:
   telegram_total: 40
   telegram_active: 38
