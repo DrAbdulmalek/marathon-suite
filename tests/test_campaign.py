@@ -18,7 +18,7 @@ def test_ortho_campaign_loads():
     assert c.target_handle == "@ortho_homs"
     assert c.pull_interval_hours == 6
     assert c.post_mode == "forward_with_attribution"
-    assert c.dedup_key == ["source_handle", "message_id"]
+    assert c.dedup_key == ["norm_file_stem", "size_bytes"]
 
 
 def test_ortho_registry_shape():
@@ -48,10 +48,10 @@ def test_ortho_web_layer_has_noor_and_ted():
     assert "ted_srt" in ids
 
 
-def test_executor_binding_points_to_toolkit():
+def test_executor_binding_points_to_engine():
     c = Campaign.load(ORTHO_DIR)
-    assert c.executor["repo"] == "tg-campaign-toolkit"
-    assert "tg_forward_ortho" in c.executor["path"]
+    assert c.executor["repo"] == "gdrive-telegram-tools"
+    assert "ortho_harvest" in c.executor["path"]
 
 
 # ---------- 2. قواعد الصدق على تعريفات مصطنعة ----------

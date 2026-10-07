@@ -22,10 +22,21 @@
    `marathon_suite.bridge.build_translation_plan` — المباراة التامة فقط
    تُعتمد آليًا، وغير ذلك `needs_human=True`.
 
-## المنفّذ
-`tg-campaign-toolkit → scripts/ortho/tg_forward_ortho.py`
+## المنفّذ (الفعلي — مُحدَّث 2026-10-07)
+
+`gdrive-telegram-tools → ortho_harvest.py` (التزام 6965851f02) — المحرك الذي يعمل فعلاً:
+
+- **تحويل من الخادم** (server-side forward — بلا نطاق ترددي) بجولات ميزانية آمنة
+  مع حفظ ذرّي للحالة واستئناف، وFloodWait بخروج نظيف، وإعادة اتصال تلقائية.
+- **مؤشران لكل مصدر**: سقف (ceil) للجديد + أرضية (floor) للمسح التاريخي — مسح
+  هابط فقط (reverse غير موثوق على القنوات الضخمة).
+- **اكتشاف تلقائي**: ترويسات التحويل → قناتها الأصلية تُضاف كمصدر دائم
+  (hop≤2 مع بوابة كلمات عظمية؛ غير العظمي = pending_review بانتظار قرار المالك).
+- **منع التكرار**: `state/ortho_harvest/sent_index.json` بمفتاح `stem::size`
+  مزروع بجرد كتب Drive السابقة — لا يُعاد أي ملف مضاف سابقًا.
 - بيانات الاعتماد من `.secrets/` وقت التشغيل فقط — لا أسرار في المستودع.
-- إعداد الاستيعاب التفصيلي: `tg-campaign-toolkit → campaigns/ortho/data/ingest_config.json`.
+- المسودة القديمة `tg-campaign-toolkit → scripts/ortho/tg_forward_ortho.py`
+  (PR #4) بانتظار قرار المالك.
 
 ## طبقة الويب (D3)
 - **مكتبة نور** (`?search_for=قاموس`): تنزيل كل ما يفيد مستودع الطب، ومستودع
@@ -41,13 +52,14 @@
 - **قناتان pending_wiring** بانتظار الربط بالمنفذ: **@Orthopaedic_channel**
   (3 278 مشتركًا — كتب عظام ورضوح + فيديوهات عمليات) و**@orthopediatric**
   (1 820 — orthopedic books and courses: كتب وكورسات عظام أطفال).
-- **مرجعا ويب reference**: SyrianClinic (المكتبة الطبية السورية — صفحة جراحة
+- **مرجفا ويب reference**: SyrianClinic (المكتبة الطبية السورية — صفحة جراحة
   العظام) وLinksMedicus (دليل اكتشاف قنوات طبية لطبقة D2).
 - **مستبعَد موثق**: @orthopaedicbook — حساب مستخدم وليس قناة (زر Send Message
   في t.me بدل Preview channel).
 
-الربط يكتمل على جهاز الحملة: إضافة القناتين إلى ingest_config ثم رفع الحالة
-pending_wiring → active.
+الربط يكتمل على جهاز الحملة: إضافة القناتين إلى قائمة USERNAMES في
+ortho_resolve_sources.py (أو مباشرة إلى state/ortho_harvest/sources.json)
+ثم رفع الحالة pending_wiring → active.
 ## الصدق والسلامة
 - مصدر «نشط» بلا handle/url → يُخفَّض إلى `inactive` عند التحميل مع سبب مسجَّل
   (`downgraded_reason`) — لا صمت ولا اختلاق.
