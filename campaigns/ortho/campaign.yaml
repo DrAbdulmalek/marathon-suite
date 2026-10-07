@@ -39,6 +39,15 @@ scope_expansion:
     overlap_rule: 'قناة نشطة في حملة الترجمة (88 مصدراً في campaigns/translation/sources.yaml) تبقى حصرياً في مسار @DrMalekDrive — لا تُسحب إلى ortho_homs'
     executor_issue: 'gdrive-telegram-tools Issue #2 — التوسعة على المحرك مع عقود Issue #1 (خصوصية/منع تكرار/RPCError)'
     activation_pr: 'pending — ترقية إلى active بعد الربط الفعلي الموثق بالأعداد الحية (بنمط PR #8/#9)'
+whatsapp_relay:
+  status: pending_implementation
+  owner_decision: '2026-10-07 — نسخ لحظي أول بأول لمجموعات النقاش العظمية في واتساب إلى قناة نقاش منفصلة جديدة'
+  mode: 'real-time new-messages-only — لا backfill تاريخي (أقل بروفايل حظر للرقم الشخصي)'
+  source_account: 'الرقم الشخصي العضو في المجموعات — allowlist صريحة بالمجموعات العظمية فقط، قراءة صامتة بلا تفاعل'
+  destination: 'قناة نقاش عظمية جديدة منفصلة — ليست ortho_homs (الكتب منفصلة عن النقاش)'
+  privacy: 'قصّ أسماء وأرقام المرسلين تماماً — ترويسة كل منشور باسم المجموعة المصدر فقط'
+  executor_issue: 'gdrive-telegram-tools Issue #3 — Baileys (Node) + whatsapp_relay.py (Python/Telethon) على جهاز الحملة'
+  activation_pr: 'pending — ترقية إلى active بعد أول نسخة حية موثقة بالسجل الزمني وُتدقيق قصّ الهوية'
 stats:
   telegram_total: 40
   telegram_active: 38
