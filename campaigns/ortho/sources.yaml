@@ -1,5 +1,5 @@
 specialty: orthopedics
-count: 38
+count: 40
 sources:
 - name: Orthopedic Surgery Learning
   handle: '@ortho_ar'
@@ -445,6 +445,28 @@ sources:
   ingest_status: active
   last_verified: 2026-10-05 (live subsource scan)
   ref_mode: username
+- name: Orthopaedic_channel
+  handle: '@Orthopaedic_channel'
+  tme_link: https://t.me/Orthopaedic_channel
+  kind: channel
+  audience: 3278
+  origin: web_search_2026-10-07
+  notes: كتب عظام ورضوح + فيديوهات عمليات — تحقق t.me مباشر 2026-10-07، بانتظار الربط بالمنفذ
+  title_verified: Orthopaedic
+  audience_verified: 3 278 subscribers
+  last_verified: '2026-10-07'
+  ingest_status: pending_wiring
+- name: orthopediatric
+  handle: '@orthopediatric'
+  tme_link: https://t.me/orthopediatric
+  kind: channel
+  audience: 1820
+  origin: web_search_2026-10-07
+  notes: قناة orthopedic books and courses — كتب وكورسات عظام أطفال؛ تحقق t.me مباشر 2026-10-07، بانتظار الربط بالمنفذ
+  title_verified: orthopediatric
+  audience_verified: 1 820 subscribers
+  last_verified: '2026-10-07'
+  ingest_status: pending_wiring
 excluded:
 - name: Самарская митрополия
   handle: OrthodoxSamarа
@@ -455,3 +477,6 @@ excluded:
   audience: 27202
   reason: تقويم الأسنان (Orthodontics) وليس الجراحة العظمية - طبية لكن تخصص مختلف؛ أضفها يدويًا إن أردت
     توسيع التغطية
+- name: Orthopaedic book
+  handle: orthopaedicbook
+  reason: 'حساب مستخدم وليس قناة — تيليجرام يعرض زر Send Message بدل Preview channel (تحقق مباشر 2026-10-07)؛ الحسابات غير قابلة للسحب الآلي — نمط استبعاد موثق كما في @ortho_zr'

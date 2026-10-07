@@ -547,3 +547,19 @@ sources:
     handle: '@maqhaalmutarjim_group'
     mode: 'all'
 
+  # --- مصادر موثقة ببحث مستقل 2026-10-07 — بانتظار الربط بقائمة PRIMARY ---
+  - name: 'medicalrefrencess'
+    kind: telegram
+    ingest_status: pending_wiring
+    handle: '@medicalrefrencess'
+    mode: 'doc'
+    note: 'مراجع وكتب وبرامج طبية (قناة منذ 2018) — 53 042 مشتركًا — تحقق t.me مباشر 2026-10-07'
+    last_verified: '2026-10-07'
+
+  - name: 'medicalegypt'
+    kind: telegram
+    ingest_status: pending_wiring
+    handle: '@medicalegypt'
+    mode: 'doc'
+    note: 'Medical Books Pdf — كتب طبية عربية/أجنبية — 17 307 مشتركًا — تحقق t.me مباشر 2026-10-07'
+    last_verified: '2026-10-07'

@@ -27,10 +27,11 @@
 
 ## السجلات
 
-- `sources.yaml` — **86 مصدر تيليجرام** مولّد آلياً من قائمة PRIMARY في السكربت
-  (كل مصدر: handle فعلي + mode: all/doc/media + علامة filtered للمفلترة).
+- `sources.yaml` — **88 مصدر تيليجرام**: 86 نشطة مولّدة آلياً من قائمة PRIMARY
+  في السكربت (كل مصدر: handle فعلي + mode: all/doc/media + علامة filtered
+  للمفلترة) + 2 pending_wiring من بحث 2026-10-07 بانتظار الربط بالسكربت.
   ملاحظة: إجمالي المصادر المسجلة عبر كل سكربتات الجرافة (register_*, probe_*)
-  ~263؛ الـ86 هنا هي المتصلة فعلياً بمحرك التحويل.
+  ~263؛ الـ86 النشطة هنا هي المتصلة فعلياً بمحرك التحويل.
 - `web_sources.yaml` — 3 جرافات ويب.
 
 ### التحديث
@@ -39,6 +40,19 @@
 وحدّث `stats.telegram_total`. عدّد الاختبار `test_translation_registry_matches_forwarder_primary`
 إذا تغير العدد.
 
+## مصادر موثقة جديدة (بحث 2026-10-07)
+
+تحقق مباشر من صفحات t.me (2026-10-07) أضاف مصدرين بحالة **pending_wiring** —
+بانتظار إضافتهما إلى قائمة PRIMARY في `scripts/tg_forward_to_channel.py`
+ثم رفع الحالة إلى active:
+
+| المعرّف | المشتركون | الوصف |
+|---|---|---|
+| @medicalrefrencess | 53 042 | مراجع وكتب وبرامج طبية (قناة منذ 2018) |
+| @medicalegypt | 17 307 | Medical Books Pdf — كتب طبية عربية/أجنبية |
+
+مستبعَد موثق: @books_medical — حساب مستخدم وليس قناة (زر Send Message بدل
+Preview channel في t.me)؛ الحسابات غير قابلة للسحب الآلي.
 ## التصحيح: إزالة campaigns/ortho_homs.yaml
 
 الملف السابق `campaigns/ortho_homs.yaml` كان يسجّل مصادر المسارد والقواميس

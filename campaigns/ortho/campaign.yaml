@@ -29,8 +29,9 @@ translation_lane:
   bridge: marathon_suite.bridge.build_translation_plan
   policy: المباراة التامة فقط تُعتمد آليًا؛ غير ذلك needs_human=True
 stats:
-  telegram_total: 38
+  telegram_total: 40
   telegram_active: 36
   sub_sources: 10
-  excluded: 2
-  web_sources: 22
+  excluded: 3
+  web_sources: 24
+  pending_wiring: 2

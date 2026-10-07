@@ -23,16 +23,20 @@ def test_translation_campaign_loads():
 def test_translation_registry_shape():
     c = Campaign.load(TRANS_DIR)
     st = c.stats()
-    assert st["telegram_total"] >= 80          # 86 في السجل الحالي
-    assert st["telegram_active"] >= 80        # نشط بلا عنوان يُخفَّض آلياً — كلها تحمل عناوين
+    assert st["telegram_total"] == 88          # 86 نشطة + 2 pending_wiring (بحث 2026-10-07)
+    assert st["telegram_active"] == 86         # نشطة مربوطة فعلياً بقائمة PRIMARY
     assert st["web_total"] >= 3               # createdres + noor + medlineplus
 
 
 def test_translation_registry_matches_forwarder_primary():
-    """سجل المصادر يعكس قائمة PRIMARY في tg_forward_to_channel.py (86 مصدراً).
+    """سجل المصادر يعكس قائمة PRIMARY في tg_forward_to_channel.py (86 نشطة)
+    إضافة إلى مصدرين pending_wiring من بحث 2026-10-07 بانتظار الربط.
     أي انحراف يعني أن السجل صار أقدم من السكربت — راجع README/التحديث."""
     c = Campaign.load(TRANS_DIR)
-    assert len(c.telegram_sources) == 86
+    st = c.stats()
+    assert len(c.telegram_sources) == 88
+    assert st["telegram_active"] == 86
+    assert st["telegram_total"] - st["telegram_active"] == 2  # pending_wiring
 
 
 def test_translation_executor_binding_points_to_toolkit():
