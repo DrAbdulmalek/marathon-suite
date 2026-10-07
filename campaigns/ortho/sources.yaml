@@ -451,22 +451,24 @@ sources:
   kind: channel
   audience: 3278
   origin: web_search_2026-10-07
-  notes: كتب عظام ورضوح + فيديوهات عمليات — تحقق t.me مباشر 2026-10-07، بانتظار الربط بالمنفذ
+  notes: كتب عظام ورضوح + فيديوهات عمليات — تحقق t.me مباشر 2026-10-07؛ مربوطة بالمنفذ (gdrive-telegram-tools/ortho_harvest — 2026-10-07)
   title_verified: Orthopaedic
   audience_verified: 3 278 subscribers
   last_verified: '2026-10-07'
-  ingest_status: pending_wiring
+  wired_verified: '2026-10-07 — حُلّت كقناة broadcast ودخلت مسح الحصاد (التزام 994aa40)'
+  ingest_status: active
 - name: orthopediatric
   handle: '@orthopediatric'
   tme_link: https://t.me/orthopediatric
   kind: channel
   audience: 1820
   origin: web_search_2026-10-07
-  notes: قناة orthopedic books and courses — كتب وكورسات عظام أطفال؛ تحقق t.me مباشر 2026-10-07، بانتظار الربط بالمنفذ
+  notes: قناة orthopedic books and courses — كتب وكورسات عظام أطفال؛ تحقق t.me مباشر 2026-10-07؛ مربوطة بالمنفذ (gdrive-telegram-tools/ortho_harvest — 2026-10-07)
   title_verified: orthopediatric
   audience_verified: 1 820 subscribers
   last_verified: '2026-10-07'
-  ingest_status: pending_wiring
+  wired_verified: '2026-10-07 — حُلّت كقناة broadcast وأول مسح حصد منها 111 كتاباً (التزام 994aa40)'
+  ingest_status: active
 excluded:
 - name: Самарская митрополия
   handle: OrthodoxSamarа
