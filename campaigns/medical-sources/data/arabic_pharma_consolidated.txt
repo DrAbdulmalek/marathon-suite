@@ -1,0 +1,328 @@
+# ============================================
+# ملف مصادر شركات الأدوية العربية - نشرات باللغتين
+# ============================================
+
+# --------------------------------------------
+# 1. شركات الأدوية السورية
+# --------------------------------------------
+
+# حماة فارما
+https://hama-pharma.com
+https://hama-pharma.com/product/phenobarbital-hama-pharma/?lang=ar
+https://hama-pharma.com/product/pizet/?lang=ar
+https://hama-pharma.com/product/fem-relieve/?lang=ar
+https://hama-pharma.com/product/volucold/?lang=ar
+https://hama-pharma.com/product/diatamb/?lang=ar
+https://hama-pharma.com/product/volu-gripp/?lang=ar
+https://hama-pharma.com/product/vitorex/?lang=ar
+https://hama-pharma.com/product/furopot-2/?lang=ar
+https://hama-pharma.com/product/tri-diab-10-5-1000/?lang=ar
+https://hama-pharma.com/product/glifolong/?lang=ar
+https://hama-pharma.com/product/triosar/?lang=ar
+https://hama-pharma.com/product/trombo-stop/?lang=ar
+https://hama-pharma.com/product/tubozid/?lang=ar
+https://hama-pharma.com/product/pulsa/?lang=ar
+
+# آسيا للصناعات الدوائية
+https://asiapharma-syria.com
+
+# السعد للصناعات الدوائية
+https://elsaad.com
+
+# يونيفارما
+https://www.unipharma-sy.com
+
+# كيمي فارما
+http://kimi-pharma.com
+
+# ألفا لصناعة الأدوية
+http://alpha-syria.com
+
+# بركات للصناعات الدوائية
+http://www.barakat-pharma.com
+
+# العوبري فارما
+http://oubari.com
+
+# الشرق للأدوية
+http://orientpharma.net
+
+# ابن الهيثم للصناعات الدوائية
+http://ibn-alhaytham.com
+
+# أفاميا للصناعات الدوائية
+http://aphamea.com
+
+# تاميكو
+http://tamico.com
+
+# الفارس للصناعات الدوائية
+http://www.alfarespharma.com
+
+# أفينزور للصناعات الدوائية
+http://avenzor.com
+
+# زيد فارما
+http://www.zein-pharma.com
+
+# بيوميد فارما
+http://biomedpharma-sy.com
+
+# ماسود فارما
+http://massoud-group.com
+
+# ألترا ميديكا
+http://www.ultra-medica.org
+
+# مايميد
+http://www.miamed.sy
+
+# بحرية فارما
+https://bahripharm.com
+
+# هيبتا بلاس فارما
+http://www.heptapluspharma.com
+
+
+# --------------------------------------------
+# 2. شركات الأدوية المصرية
+# --------------------------------------------
+
+# إيفا فارما
+https://www.evapharma.com
+
+# فاركو
+https://pharco.com
+
+# إيبيكو
+https://www.eipico.com
+
+# أمون للأدوية
+https://www.amoun.com
+
+# أبيكس فارما
+https://www.apexpharma.com
+
+# النيل للأدوية
+https://www.nilepharma.com
+
+# ممفيس للأدوية
+https://www.memphispharma.com
+
+# القاهرة للأدوية
+https://www.cairo-pharma.com
+
+# العربية للأدوية
+https://www.arabpharma.com
+
+# الإسكندرية للأدوية
+https://www.alexpharma.com
+
+# جلوبال نابي
+https://www.globalnapi.com
+
+# إيجيفار
+# (لا يوجد موقع رسمي مستقل - منتجاتها مسجلة في هيئة الدواء المصرية)
+https://www.edaegypt.gov.eg
+
+
+# --------------------------------------------
+# 3. شركات الأدوية السعودية
+# --------------------------------------------
+
+# سبيماكو
+https://www.spimaco.com.sa
+
+# جمجوم فارما
+https://www.jamjoompharma.com
+
+# أفالون فارما
+https://www.avalonpharma.com
+
+# الشركة السعودية اليابانية (ساجا)
+https://www.saja.com.sa
+
+# الشركة العربية للصناعات الدوائية (أكديما)
+https://www.acdima.com
+
+# الرياض فارما
+https://www.riyadhpharma.com
+
+# تبوك للصناعات الدوائية
+https://www.tabukpharma.com
+
+# سدير فارما
+https://www.sudairpharma.com
+
+
+# --------------------------------------------
+# 4. شركات الأدوية الإماراتية
+# --------------------------------------------
+
+# جلفار (الخليج للصناعات الدوائية)
+https://www.julphar.net
+
+# نيو فارما
+https://www.neopharma.ae
+
+# جلوبال فارما
+https://www.globalpharma.ae
+
+# لايف فارما
+https://www.lifepharma.ae
+
+# فارماكس
+https://www.pharmax.ae
+
+# ويل فارما
+https://www.wellpharma.ae
+
+
+# --------------------------------------------
+# 5. شركات الأدوية الأردنية
+# --------------------------------------------
+
+# الحكمة للأدوية
+https://www.hikma.com
+
+# MS Pharma
+https://www.mspharma.com
+
+# الشركة الأردنية لصناعة الأدوية (JPM)
+https://www.jpm.com.jo
+
+# رام فارما
+https://www.rampharma.com
+
+# دار الدواء
+https://www.dardawa.com
+
+# فيلادلفيا للأدوية
+https://www.philadelphia-pharma.com
+
+# الحياة للصناعات الدوائية
+https://www.hayatpharma.com
+
+# الكندي للصناعات الدوائية
+https://www.kindi-pharma.com
+
+# الأردنية السويدية (JOSWE)
+https://www.joswe.com
+
+
+# --------------------------------------------
+# 6. شركات الأدوية اللبنانية
+# --------------------------------------------
+
+# ألفا للأدوية
+https://www.alfalabs.com.lb
+
+# بنتا
+https://www.bpi.com.lb
+
+# أروان للصناعات الدوائية
+https://www.arwanpharma.com
+
+# فارمالاين
+https://www.pharmaline.com
+
+# ميفيكو
+https://www.mephico.com
+
+# مدي فار
+https://www.mediphar.com.lb
+
+# أوميكرون للأدوية
+https://www.omicron-pharma.com
+
+# شلهوب فارماسوتيكالس
+https://www.chalhoubpharma.com
+
+
+# --------------------------------------------
+# 7. شركات الأدوية المغربية
+# --------------------------------------------
+
+# سوتيما
+https://www.sothema.com
+
+# مافار
+https://www.maphar.com
+
+# كوبر فارما
+https://www.cooperpharma.com
+
+# زينيث فارما
+https://www.zenithpharma.com
+
+# أفريك فار
+https://www.africphar.ma
+
+# فارما 5
+https://www.pharma5.com
+
+# جين فارما
+https://www.genpharma.ma
+
+
+# --------------------------------------------
+# 8. شركات الأدوية التونسية
+# --------------------------------------------
+
+# الشركة الصناعية للأدوية (سماد)
+https://www.siphat.com.tn
+
+# الشركة العربية للصناعات الصيدلانية (طاسيلي)
+https://www.taphco.com.tn
+
+# أدوية تونس
+https://www.adwya.tn
+
+
+# --------------------------------------------
+# 9. شركات الأدوية الجزائرية
+# --------------------------------------------
+
+# صيدال
+https://www.saidalgroup.dz
+
+# طاسيلي فارما
+https://www.tassilipharma.dz
+
+# بيوفارم
+https://www.biopharm.dz
+
+
+# --------------------------------------------
+# 10. قواعد بيانات النشرات الطبية الرسمية
+# --------------------------------------------
+
+# الهيئة العامة للغذاء والدواء السعودية (SFDA) - نشرة معلومات المريض
+https://www.sfda.gov.sa
+
+# هيئة الدواء المصرية (EDA) - النشرات الدوائية
+https://www.edaegypt.gov.eg
+
+# وزارة الصحة اللبنانية - الدليل الوطني للأدوية
+https://www.moph.gov.lb
+
+# الوكالة المغربية للأدوية والمنتجات الصحية (AMMPS)
+https://www.ammps.gov.ma
+
+# الهيئة الوطنية لتنظيم المهن والخدمات الصحية - البحرين
+https://www.nhra.bh
+
+# قاعدة بيانات الأدوية الكويتية
+https://www.drug.gov.kw
+
+
+# --------------------------------------------
+# 11. ملاحظة لتطبيق التنزيل
+# --------------------------------------------
+# - الروابط التي تنتهي بـ .com أو .net هي مواقع رئيسية للشركات.
+# - للوصول إلى النشرات، ابحث داخل الموقع عن قسم:
+#   "Products" أو "المنتجات" أو "Patient Information" أو "نشرة معلومات المريض".
+# - بعض الشركات توفر النشرة كملف PDF مباشر داخل صفحة كل منتج.
+# - مواقع الهيئات الرقابية (SFDA، EDA، MOPH) توفر قواعد بيانات كاملة
+#   قابلة للبحث والتحميل مباشرة.
+
