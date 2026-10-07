@@ -1,0 +1,47 @@
+campaign: translation
+title: حملة الترجمة — مكتبة DrMalekDrive
+specialty: translation_languages
+target_channel:
+  handle: '@DrMalekDrive'
+  title: DrMalekDrive
+  telegram_id: 3913901632
+  tme_link: https://t.me/DrMalekDrive
+  audience: '~29.5 ألف رسالة / ~150GB — مكتبة طبية/لغوية/تعليمية'
+  role: destination — كل المحتوى المسحوب يُنشر هنا
+  last_verified: '2026-10-07'
+schedule:
+  pull_interval_hours: 6
+  first_run_backfill: false
+  pull_scope: new_only_since_last_cursor
+  dedup_key:
+  - file_name
+  - size_bytes
+  post_mode: copy_or_forward
+  active_hours: 00:00-24:00
+  note: >-
+    المحرك يعمل بشرائح زمنية (FWD_BUDGET: 110 ثانية افتراضياً، 440 عبر
+    محرك marathon في اللوحة) مع جداول progress.json قابلة للاستئناف؛
+    قيمة الفترة هنا إيقاعية وليست مؤقتاً حرفياً.
+sources_file: sources.yaml
+web_sources_file: web_sources.yaml
+executor:
+  repo: tg-campaign-toolkit
+  path: scripts/tg_forward_to_channel.py
+  state: state/forward/progress.json
+  dedup_ledger: sent_index.py (اسم ملف + حجم بالبايت — state/forward/*.jsonl)
+  seeding: scripts/seed_forward_state.py يزرع سجل المنع من جرد القناة قبل أول تشغيل
+  credentials: .secrets/ عبر متغيرات التشغيل فقط — لا أسرار في المستودع
+discovery_lane:
+  sub_sources: >-
+    قنوات مكتشفة من ترويسات fwd_from (hop<=2) مع فلترة كلمات مفتاحية
+    للترجمة؛ تُسجل في state/forward/discovered.jsonl وتُضاف لقائمة الانتظار
+    تلقائياً — نفس أسلوب القنوات الفرعية (D2) في حملة العظام.
+translation_lane:
+  bridge: marathon_suite.bridge.build_translation_plan
+  policy: المباراة التامة فقط تُعتمد آليًا؛ غير ذلك needs_human=True
+stats:
+  telegram_total: 86
+  telegram_active: 86
+  web_sources: 3
+  message_volume: 29500
+  volume_gb: 150

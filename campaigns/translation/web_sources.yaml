@@ -1,0 +1,20 @@
+# طبقة الويب لحملة الترجمة — جرافات مسجلة في tg-campaign-toolkit (مستقلة عن محرك التحويل).
+sources:
+  - name: createdres
+    kind: web
+    ingest_status: active
+    url: https://createdres.com
+    id: createdres
+    note: 'ESL PDFs: 789 مستهدفاً (createdres_worker.py — ledger-resumable، حارس قرص)'
+  - name: noor_library
+    kind: web
+    ingest_status: active
+    url: https://www.noor-book.com
+    id: noor_library
+    note: 'اكتشاف كتب مكتبة نور — noor_books.py (محرك noor في اللوحة)'
+  - name: medlineplus_en
+    kind: web
+    ingest_status: active
+    url: https://medlineplus.gov
+    id: medlineplus_en
+    note: 'محتوى طبي إنجليزي مرجعي — medlineplus_en.py'

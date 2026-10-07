@@ -1,0 +1,549 @@
+# سجل مصادر حملة الترجمة -> @DrMalekDrive
+# مولَّد آلياً من tg-campaign-toolkit/scripts/tg_forward_to_channel.py v2.1 (أحدث التزام: e8c03d2)
+# primary handle = اسم المستخدم الفعلي في تيليجرام؛ mode = نمط السحب:
+#   all = كل الرسائل | doc = الوثائق فقط | media = الوسائط فقط
+# filtered = true يعني أن السحب يمر عبر matches_filter (مفردات الترجمة) قبل الإرسال.
+# القنوات المكتشفة ديناميكياً (fwd_from، hop<=2) تُدار في state/forward/discovered.jsonl
+# على جهاز الحملة — لا تُدرج هنا.
+sources:
+  # --- النواة: قناة Translearners (الجسد النصي أُرسل مستقلاً — الوسائط فقط) ---
+  - name: 'translearners'
+    kind: telegram
+    ingest_status: active
+    ref: 'tg_id:-1001135889451'
+    mode: 'media'
+    note: 'الجسد النصي أُرسل كوثيقة مستقلة (corpus_sent=done)؛ الوسائط فقط مع سجل تخطي copy_state.txt'
+
+  # --- قنوات الترجمة الأساسية: كل الرسائل ---
+  - name: 'nahwfortrans'
+    kind: telegram
+    ingest_status: active
+    handle: '@NahwForTrans'
+    mode: 'all'
+
+  - name: 'anggalizy1'
+    kind: telegram
+    ingest_status: active
+    handle: '@Angalizy1'
+    mode: 'all'
+
+  - name: 'bonjourtranslation'
+    kind: telegram
+    ingest_status: active
+    handle: '@BonjourTranslation'
+    mode: 'all'
+
+  - name: 'translatorguide1'
+    kind: telegram
+    ingest_status: active
+    handle: '@translatorguide1'
+    mode: 'all'
+
+  - name: 'translationzf'
+    kind: telegram
+    ingest_status: active
+    handle: '@TranslationZF'
+    mode: 'all'
+
+  - name: 'translationve'
+    kind: telegram
+    ingest_status: active
+    handle: '@translationve'
+    mode: 'all'
+
+  - name: 'pttranslators'
+    kind: telegram
+    ingest_status: active
+    handle: '@pttranslators'
+    mode: 'all'
+
+  - name: 'faisaltranslate'
+    kind: telegram
+    ingest_status: active
+    handle: '@faisaltranslate'
+    mode: 'all'
+
+  - name: 'targma_amely'
+    kind: telegram
+    ingest_status: active
+    handle: '@Targma_amely'
+    mode: 'all'
+
+  - name: 'translationpolice'
+    kind: telegram
+    ingest_status: active
+    handle: '@translationpolice'
+    mode: 'all'
+
+  # --- مصادر مكتشفة بتتبع fwd من الجرد (موافقة المالك 2026-09-30 #3) ---
+  - name: 'Translearner'
+    kind: telegram
+    ingest_status: active
+    handle: '@Translearner'
+    mode: 'all'
+
+  - name: 'dragoman11'
+    kind: telegram
+    ingest_status: active
+    handle: '@dragoman11'
+    mode: 'all'
+
+  - name: 'hghkgjghg'
+    kind: telegram
+    ingest_status: active
+    handle: '@hghkgjghg'
+    mode: 'all'
+
+  - name: 'alif_translation_training'
+    kind: telegram
+    ingest_status: active
+    handle: '@alif_translation_training'
+    mode: 'all'
+
+  - name: 'Arbib4ts'
+    kind: telegram
+    ingest_status: active
+    handle: '@Arbib4ts'
+    mode: 'all'
+
+  - name: 'englishcafe_1'
+    kind: telegram
+    ingest_status: active
+    handle: '@englishcafe_1'
+    mode: 'all'
+
+  # --- قنوات مؤجلة من البحث الشامل: قواميس/معاجم (doc = وثائق فقط) ---
+  - name: 'almoradefat'
+    kind: telegram
+    ingest_status: active
+    handle: '@almoradefat'
+    mode: 'all'
+
+  - name: 'upwwwwi'
+    kind: telegram
+    ingest_status: active
+    handle: '@upwwwwi'
+    mode: 'doc'
+
+  - name: 'MdictChineseArabicEnglish'
+    kind: telegram
+    ingest_status: active
+    handle: '@MdictChineseArabicEnglish'
+    mode: 'doc'
+
+  - name: 'goldendictionaryCollections'
+    kind: telegram
+    ingest_status: active
+    handle: '@goldendictionaryCollections'
+    mode: 'doc'
+
+  - name: 'dictionary1a'
+    kind: telegram
+    ingest_status: active
+    handle: '@dictionary1a'
+    mode: 'doc'
+
+  - name: 'CollinsGermanDictionary'
+    kind: telegram
+    ingest_status: active
+    handle: '@CollinsGermanDictionary'
+    mode: 'doc'
+
+  # --- قنوات مؤجلة: موارد/مجتمعات ترجمة (doc) ---
+  - name: 'translationsentinces'
+    kind: telegram
+    ingest_status: active
+    handle: '@translationsentinces'
+    mode: 'doc'
+
+  - name: 'katherine11777_translation'
+    kind: telegram
+    ingest_status: active
+    handle: '@katherine11777_translation'
+    mode: 'doc'
+
+  - name: 'rrcqc'
+    kind: telegram
+    ingest_status: active
+    handle: '@rrcqc'
+    mode: 'doc'
+
+  - name: 'trn200'
+    kind: telegram
+    ingest_status: active
+    handle: '@trn200'
+    mode: 'doc'
+
+  - name: 'tr_anslator'
+    kind: telegram
+    ingest_status: active
+    handle: '@tr_anslator'
+    mode: 'doc'
+
+  - name: 'Translation3'
+    kind: telegram
+    ingest_status: active
+    handle: '@Translation3'
+    mode: 'doc'
+    filtered: true
+
+  - name: 'mutercim19'
+    kind: telegram
+    ingest_status: active
+    handle: '@mutercim19'
+    mode: 'doc'
+
+  - name: 'dratranslation'
+    kind: telegram
+    ingest_status: active
+    handle: '@dratranslation'
+    mode: 'doc'
+
+  - name: 'silencesgreat'
+    kind: telegram
+    ingest_status: active
+    handle: '@silencesgreat'
+    mode: 'doc'
+
+  # --- كتب إنجليزية PDF (doc) ---
+  - name: 'books_magazine'
+    kind: telegram
+    ingest_status: active
+    handle: '@books_magazine'
+    mode: 'doc'
+
+  - name: 'englishbooksforall'
+    kind: telegram
+    ingest_status: active
+    handle: '@englishbooksforall'
+    mode: 'doc'
+
+  - name: 'Books_English'
+    kind: telegram
+    ingest_status: active
+    handle: '@Books_English'
+    mode: 'doc'
+
+  - name: 'ENGLISH_BOOKSz'
+    kind: telegram
+    ingest_status: active
+    handle: '@ENGLISH_BOOKSz'
+    mode: 'doc'
+
+  - name: 'englishbooksandfiles'
+    kind: telegram
+    ingest_status: active
+    handle: '@englishbooksandfiles'
+    mode: 'doc'
+
+  - name: 'novels_in_english'
+    kind: telegram
+    ingest_status: active
+    handle: '@novels_in_english'
+    mode: 'doc'
+
+  - name: 'oxfordmaterials'
+    kind: telegram
+    ingest_status: active
+    handle: '@oxfordmaterials'
+    mode: 'doc'
+
+  - name: 'maritime_english_books'
+    kind: telegram
+    ingest_status: active
+    handle: '@maritime_english_books'
+    mode: 'doc'
+
+  - name: 'EnglishBooksPDFFiles'
+    kind: telegram
+    ingest_status: active
+    handle: '@EnglishBooksPDFFiles'
+    mode: 'doc'
+
+  - name: 'English_bookss'
+    kind: telegram
+    ingest_status: active
+    handle: '@English_bookss'
+    mode: 'doc'
+
+  - name: 'englishtreasurybooks'
+    kind: telegram
+    ingest_status: active
+    handle: '@englishtreasurybooks'
+    mode: 'doc'
+
+  # --- تعلم الإنجليزية: ضخمة نصياً -> doc فقط ---
+  - name: 'ttt621'
+    kind: telegram
+    ingest_status: active
+    handle: '@ttt621'
+    mode: 'doc'
+
+  - name: 'nn_48'
+    kind: telegram
+    ingest_status: active
+    handle: '@nn_48'
+    mode: 'doc'
+
+  - name: 'LearnEng01'
+    kind: telegram
+    ingest_status: active
+    handle: '@LearnEng01'
+    mode: 'doc'
+
+  - name: 'azglish'
+    kind: telegram
+    ingest_status: active
+    handle: '@azglish'
+    mode: 'doc'
+
+  - name: 'englishyeswecan'
+    kind: telegram
+    ingest_status: active
+    handle: '@englishyeswecan'
+    mode: 'doc'
+
+  - name: 'Learn3English'
+    kind: telegram
+    ingest_status: active
+    handle: '@Learn3English'
+    mode: 'doc'
+
+  - name: 'English2top'
+    kind: telegram
+    ingest_status: active
+    handle: '@English2top'
+    mode: 'doc'
+
+  # --- نشرات أدوية سورية (doc) ---
+  - name: 'syriantradenamesdrugs'
+    kind: telegram
+    ingest_status: active
+    handle: '@syriantradenamesdrugs'
+    mode: 'doc'
+
+  - name: 'PharmaQuizat'
+    kind: telegram
+    ingest_status: active
+    handle: '@PharmaQuizat'
+    mode: 'doc'
+
+  - name: 'syrdrugs'
+    kind: telegram
+    ingest_status: active
+    handle: '@syrdrugs'
+    mode: 'doc'
+
+  - name: 'meddose'
+    kind: telegram
+    ingest_status: active
+    handle: '@meddose'
+    mode: 'doc'
+
+  # --- موجة قواميس/ثنائية اللغة 2026-09-30 (doc) ---
+  - name: 'professionaltranslat'
+    kind: telegram
+    ingest_status: active
+    handle: '@professionaltranslat'
+    mode: 'doc'
+
+  - name: 'vocaidiom'
+    kind: telegram
+    ingest_status: active
+    handle: '@vocaidiom'
+    mode: 'doc'
+
+  - name: 'timebookshop'
+    kind: telegram
+    ingest_status: active
+    handle: '@timebookshop'
+    mode: 'doc'
+
+  - name: 'practicenglishtime'
+    kind: telegram
+    ingest_status: active
+    handle: '@practicenglishtime'
+    mode: 'doc'
+
+  - name: 'learn_to_languageenglish'
+    kind: telegram
+    ingest_status: active
+    handle: '@learn_to_languageenglish'
+    mode: 'doc'
+
+  - name: 'mosayed75'
+    kind: telegram
+    ingest_status: active
+    handle: '@mosayed75'
+    mode: 'doc'
+
+  # --- زوج السحب الكامل «اسحب كل الكتب»: كتب فقط (doc) ---
+  - name: 'lenstaleb'
+    kind: telegram
+    ingest_status: active
+    handle: '@lenstaleb'
+    mode: 'doc'
+
+  - name: 'Disscussion9600'
+    kind: telegram
+    ingest_status: active
+    handle: '@Disscussion9600'
+    mode: 'doc'
+
+  # --- no1_oone (استئناف 2026-09-29) ---
+  - name: 'no1_oone'
+    kind: telegram
+    ingest_status: active
+    handle: '@no1_oone'
+    mode: 'all'
+
+  # --- مفلترة: ثنائية اللغة / EN مع مقابل عربي / متعلقة بالترجمة (matches_filter) ---
+  - name: 'librarypdf11'
+    kind: telegram
+    ingest_status: active
+    handle: '@librarypdf11'
+    mode: 'all'
+    filtered: true
+
+  - name: 'book10'
+    kind: telegram
+    ingest_status: active
+    handle: '@book10'
+    mode: 'all'
+    filtered: true
+
+  - name: 'librarypdf1'
+    kind: telegram
+    ingest_status: active
+    handle: '@librarypdf1'
+    mode: 'all'
+    filtered: true
+
+  - name: 'l_alnader2'
+    kind: telegram
+    ingest_status: active
+    handle: '@l_alnader2'
+    mode: 'all'
+    filtered: true
+
+  - name: 'medicallibraryg1'
+    kind: telegram
+    ingest_status: active
+    handle: '@medicallibraryg1'
+    mode: 'all'
+    filtered: true
+
+  - name: 'medical_librarr'
+    kind: telegram
+    ingest_status: active
+    handle: '@medical_librarr'
+    mode: 'all'
+    filtered: true
+
+  - name: 'Million_medical_books'
+    kind: telegram
+    ingest_status: active
+    handle: '@Million_medical_books'
+    mode: 'all'
+    filtered: true
+
+  - name: 'maktbapdf'
+    kind: telegram
+    ingest_status: active
+    handle: '@maktbapdf'
+    mode: 'all'
+    filtered: true
+
+  - name: 'freebooks4all'
+    kind: telegram
+    ingest_status: active
+    handle: '@freebooks4all'
+    mode: 'all'
+
+  - name: 'lenaqra'
+    kind: telegram
+    ingest_status: active
+    handle: '@lenaqra'
+    mode: 'all'
+    filtered: true
+
+  # --- قنوات كتب بترشيح المالك (2026-09-29) ---
+  - name: 'tarjuman1'
+    kind: telegram
+    ingest_status: active
+    handle: '@tarjuman1'
+    mode: 'all'
+
+  - name: 'pdffq'
+    kind: telegram
+    ingest_status: active
+    handle: '@pdffq'
+    mode: 'all'
+
+  - name: 'Arabic_English_Dict'
+    kind: telegram
+    ingest_status: active
+    handle: '@Arabic_English_Dict'
+    mode: 'all'
+
+  - name: 'Syr_edu'
+    kind: telegram
+    ingest_status: active
+    handle: '@Syr_edu'
+    mode: 'all'
+
+  - name: 'booksloversss'
+    kind: telegram
+    ingest_status: active
+    handle: '@booksloversss'
+    mode: 'all'
+
+  - name: 'english_books_library'
+    kind: telegram
+    ingest_status: active
+    handle: '@english_books_library'
+    mode: 'all'
+
+  - name: 'myenglibrary'
+    kind: telegram
+    ingest_status: active
+    handle: '@myenglibrary'
+    mode: 'all'
+
+  - name: 'lovekotob'
+    kind: telegram
+    ingest_status: active
+    handle: '@lovekotob'
+    mode: 'all'
+
+  - name: 'library_sy'
+    kind: telegram
+    ingest_status: active
+    handle: '@library_sy'
+    mode: 'all'
+
+  - name: 'baca11111'
+    kind: telegram
+    ingest_status: active
+    handle: '@baca11111'
+    mode: 'all'
+
+  - name: 'pharmacybook_idleb'
+    kind: telegram
+    ingest_status: active
+    handle: '@pharmacybook_idleb'
+    mode: 'all'
+
+  # --- backlogs ضخمة أخيراً ---
+  - name: 'transskylanguagesolutions'
+    kind: telegram
+    ingest_status: active
+    handle: '@TransSkylanguagesolutions'
+    mode: 'all'
+
+  - name: 'maqhaalmutarjim_group'
+    kind: telegram
+    ingest_status: active
+    handle: '@maqhaalmutarjim_group'
+    mode: 'all'
+
