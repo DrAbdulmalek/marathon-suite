@@ -547,19 +547,21 @@ sources:
     handle: '@maqhaalmutarjim_group'
     mode: 'all'
 
-  # --- مصادر موثقة ببحث مستقل 2026-10-07 — بانتظار الربط بقائمة PRIMARY ---
+  # --- مصادر موثقة ببحث مستقل 2026-10-07 — مربوطة بالمحرك المخصص (3718bea) ---
   - name: 'medicalrefrencess'
     kind: telegram
-    ingest_status: pending_wiring
+    ingest_status: active
     handle: '@medicalrefrencess'
     mode: 'doc'
-    note: 'مراجع وكتب وبرامج طبية (قناة منذ 2018) — 53 042 مشتركًا — تحقق t.me مباشر 2026-10-07'
+    note: 'مراجع وكتب وبرامج طبية (قناة منذ 2018) — 53 042 مشتركًا — تحقق t.me مباشر 2026-10-07؛ مربوطة بالمحرك المخصص (gdrive-telegram-tools/translation_harvest — 2026-10-07)'
+    wired_verified: '2026-10-07 — حُلّت كقناة broadcast (id 1326554100) ودخلت مسح الحصاد بوضع doc: أول جولة 671 وثيقة (التزام 3718bea)'
     last_verified: '2026-10-07'
 
   - name: 'medicalegypt'
     kind: telegram
-    ingest_status: pending_wiring
+    ingest_status: active
     handle: '@medicalegypt'
     mode: 'doc'
-    note: 'Medical Books Pdf — كتب طبية عربية/أجنبية — 17 307 مشتركًا — تحقق t.me مباشر 2026-10-07'
+    note: 'Medical Books Pdf — كتب طبية عربية/أجنبية — 17 307 مشتركًا — تحقق t.me مباشر 2026-10-07؛ مربوطة بالمحرك المخصص (gdrive-telegram-tools/translation_harvest — 2026-10-07)'
+    wired_verified: '2026-10-07 — حُلّت كقناة broadcast (id 1430976648) ودخلت مسح الحصاد بوضع doc: أول جولة 41 وثيقة (التزام 3718bea)'
     last_verified: '2026-10-07'

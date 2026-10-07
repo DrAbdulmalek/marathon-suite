@@ -23,27 +23,36 @@ def test_translation_campaign_loads():
 def test_translation_registry_shape():
     c = Campaign.load(TRANS_DIR)
     st = c.stats()
-    assert st["telegram_total"] == 88          # 86 نشطة + 2 pending_wiring (بحث 2026-10-07)
-    assert st["telegram_active"] == 86         # نشطة مربوطة فعلياً بقائمة PRIMARY
+    assert st["telegram_total"] == 88          # كلها نشطة بعد ربط بحث 2026-10-07
+    assert st["telegram_active"] == 88         # 86 ماراثون + قناتان مربوطتان (3718bea)
     assert st["web_total"] >= 3               # createdres + noor + medlineplus
 
 
-def test_translation_registry_matches_forwarder_primary():
-    """سجل المصادر يعكس قائمة PRIMARY في tg_forward_to_channel.py (86 نشطة)
-    إضافة إلى مصدرين pending_wiring من بحث 2026-10-07 بانتظار الربط.
-    أي انحراف يعني أن السجل صار أقدم من السكربت — راجع README/التحديث."""
+def test_translation_registry_matches_forwarder_seed():
+    """سجل المصادر يعكس بذرة المحرك المخصص translation_harvest.py
+    (43 مصدراً مزروعاً) + سجل الماراثون الموثق — كلها active بعد الربط.
+    أي انحراف يعني أن السجل صار أقدم من المحرك — راجع README/التحديث."""
     c = Campaign.load(TRANS_DIR)
     st = c.stats()
     assert len(c.telegram_sources) == 88
-    assert st["telegram_active"] == 86
-    assert st["telegram_total"] - st["telegram_active"] == 2  # pending_wiring
+    assert st["telegram_active"] == 88
+    assert st["telegram_total"] - st["telegram_active"] == 0  # لا pending_wiring
+    wired = [s for s in c.telegram_sources
+             if s.name in ("medicalrefrencess", "medicalegypt")]
+    assert len(wired) == 2
+    for s in wired:
+        assert s.ingest_status == "active"
+        assert "wired_verified" in s.extra
 
 
-def test_translation_executor_binding_points_to_toolkit():
+def test_translation_executor_binding_points_to_dedicated_engine():
+    """المنفّذ هو المحرك المخصص في gdrive-telegram-tools (3718bea)."""
     c = Campaign.load(TRANS_DIR)
-    assert c.executor["repo"] == "tg-campaign-toolkit"
-    assert "tg_forward_to_channel" in c.executor["path"]
+    assert c.executor["repo"] == "gdrive-telegram-tools"
+    assert "translation_harvest" in c.executor["path"]
     assert "sent_index" in c.executor.get("dedup_ledger", "")
+    assert "translation_harvest" in c.executor.get("state", "")
+    assert "migrate" in c.executor.get("seeding", "")
 
 
 def test_translation_no_internal_ids_leak():

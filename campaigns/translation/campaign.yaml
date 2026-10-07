@@ -25,24 +25,31 @@ schedule:
 sources_file: sources.yaml
 web_sources_file: web_sources.yaml
 executor:
-  repo: tg-campaign-toolkit
-  path: scripts/tg_forward_to_channel.py
-  state: state/forward/progress.json
-  dedup_ledger: sent_index.py (اسم ملف + حجم بالبايت — state/forward/*.jsonl)
-  seeding: scripts/seed_forward_state.py يزرع سجل المنع من جرد القناة قبل أول تشغيل
+  repo: gdrive-telegram-tools
+  path: translation_harvest.py
+  state: state/translation_harvest/progress.json
+  dedup_ledger: sent_index.json (stem::size — state/translation_harvest/، مُبذّر من سجل الماراثون القديم)
+  seeding: translation_migrate_state.py — ترحيل لمرة واحدة لحالة الماراثون القديم (263 مصدراً / 19,288 تحويلاً / مؤشرات لكل مصدر)؛ الحالة القديمة تبقى للقراءة فقط كاحتياط
   credentials: .secrets/ عبر متغيرات التشغيل فقط — لا أسرار في المستودع
+  successor_note: >-
+    المحرك الجديد (التزام 3718bea في gdrive-telegram-tools، 2026-10-07) خليفة
+    tg_forward_to_channel.py v2.1: مؤشرا ceil/floor بتصميم العظام + استئناف asc
+    للمصادر المُرحّلة، مسح boundary-exact (لا رسالة تُعاد معالجتها)، أنماط
+    all/media/doc + بوابة FILTERED، وضع نسخ للمصادر المحمية، بوابة خصوصية
+    Issue #1، وكل إرسال يُلحق بسجل القديم (sent_files_new.jsonl) ليتسق
+    المحرك الموقوف كاحتياط.
 discovery_lane:
   sub_sources: >-
     قنوات مكتشفة من ترويسات fwd_from (hop<=2) مع فلترة كلمات مفتاحية
-    للترجمة؛ تُسجل في state/forward/discovered.jsonl وتُضاف لقائمة الانتظار
-    تلقائياً — نفس أسلوب القنوات الفرعية (D2) في حملة العظام.
+    للترجمة؛ تُسجل في state/translation_harvest/discovered.jsonl وتُضاف
+    لقائمة الانتظار تلقائياً — نفس أسلوب القنوات الفرعية (D2) في حملة العظام.
 translation_lane:
   bridge: marathon_suite.bridge.build_translation_plan
   policy: المباراة التامة فقط تُعتمد آليًا؛ غير ذلك needs_human=True
 stats:
   telegram_total: 88
-  telegram_active: 86
-  pending_wiring: 2
+  telegram_active: 88
+  pending_wiring: 0
   web_sources: 3
   message_volume: 29500
   volume_gb: 150

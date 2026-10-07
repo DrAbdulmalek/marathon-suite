@@ -17,19 +17,20 @@
 
 | المكوّن | المكان |
 |---|---|
-| المنفّذ | tg-campaign-toolkit → `scripts/tg_forward_to_channel.py` (v2.1، المحرك `marathon` في اللوحة) |
-| سجل المنع | `sent_index.py` — مفتاح (اسم الملف + الحجم بالبايت) عبر `state/forward/*.jsonl` |
+| المنفّذ | **gdrive-telegram-tools → `translation_harvest.py`** (المحرك المخصص، التزام 3718bea — 2026-10-07)؛ السلف `tg_forward_to_channel.py` v2.1 موقوف كاحتياط ويبقى متسقاً مع السجل |
+| سجل المنع | `sent_index.json` — مفتاح `stem::size` في `state/translation_harvest/`، مُبذَّر من سجل الماراثون القديم (channel_inventory + sent_files_new)؛ كل إرسال جديد يُلحق بالسجلين |
 | البذر الأولي | `seed_forward_state.py` يزرع سجل المنع من جرد القناة (`channel_inventory.jsonl`) — «المضاف سابقاً» لا يُعاد |
-| الاستئناف | `progress.json` يُحفظ ذرّياً بعد كل دفعة؛ FloodWait → موعد مؤجل + إيقاء |
+| الاستئناف | `progress.json` يُحفظ ذرّياً بعد كل دفعة؛ مؤشران لكل مصدر: `band` (ceil/floor بتصميم العظام) و`asc` (استئناف تصاعدي للمصادر المُرحّلة)؛ مسح boundary-exact — لا رسالة تُعالَج مرتين؛ FloodWait → موعد مؤجل + خروج نظيف |
 | المصادر المحمية | noforwards → وضع النسخ العميق (تنزيل ثم رفع، سقف 150MB) |
-| الاكتشاف | ترويسات fwd_from (hop≤2) مع فلترة مفردات الترجمة → `discovered.jsonl` |
+| الاكتشاف | ترويسات fwd_from (hop≤2) مع فلترة مفردات الترجمة وبوابة خصوصية Issue #1 → `state/translation_harvest/discovered.jsonl` |
 | طبقة الويب | createdres (789 PDF) + مكتبة نور + MedlinePlus |
 
 ## السجلات
 
-- `sources.yaml` — **88 مصدر تيليجرام**: 86 نشطة مولّدة آلياً من قائمة PRIMARY
-  في السكربت (كل مصدر: handle فعلي + mode: all/doc/media + علامة filtered
-  للمفلترة) + 2 pending_wiring من بحث 2026-10-07 بانتظار الربط بالسكربت.
+- `sources.yaml` — **88 مصدر تيليجرام، كلها نشطة ومربوطة** (2026-10-07):
+  86 من قائمة الماراثون الموثقة + القناتان المربوطتان من بحث 2026-10-07
+  (`@medicalrefrencess` 671 وثيقة في أول جولة، `@medicalegypt` 41 وثيقة —
+  وضع `doc`، التزام 3718bea).
   ملاحظة: إجمالي المصادر المسجلة عبر كل سكربتات الجرافة (register_*, probe_*)
   ~263؛ الـ86 النشطة هنا هي المتصلة فعلياً بمحرك التحويل.
 - `web_sources.yaml` — 3 جرافات ويب.
@@ -40,11 +41,12 @@
 وحدّث `stats.telegram_total`. عدّد الاختبار `test_translation_registry_matches_forwarder_primary`
 إذا تغير العدد.
 
-## مصادر موثقة جديدة (بحث 2026-10-07)
+## مصادر موثقة جديدة (بحث 2026-10-07) — الربط مكتمل
 
-تحقق مباشر من صفحات t.me (2026-10-07) أضاف مصدرين بحالة **pending_wiring** —
-بانتظار إضافتهما إلى قائمة PRIMARY في `scripts/tg_forward_to_channel.py`
-ثم رفع الحالة إلى active:
+تحقق مباشر من صفحات t.me (2026-10-07) أضاف مصدرين — **مربوطان الآن بالمحرك
+المخصص** `gdrive-telegram-tools/translation_harvest.py` (التزام 3718bea،
+2026-10-07): حُلّتا كقناتَي broadcast وأُضيفتا لبذرة الحلّال بوضع `doc`،
+ورُفعت حالتهما إلى active مع حقل `wired_verified`:
 
 | المعرّف | المشتركون | الوصف |
 |---|---|---|
