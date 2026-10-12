@@ -16,7 +16,7 @@ from marathon_suite import build_translation_plan
 
 # ---------- 1. عقود التثبيت: النواتان بالوسوم المتفق عليها ----------
 def test_ocr_core_pinned_version():
-    assert md.version("marathon-ocr-core") == "0.4.0"
+    assert md.version("marathon-ocr-core") == "0.6.0"
 
 
 def test_translation_core_pinned_version():
