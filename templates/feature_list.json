@@ -1,0 +1,22 @@
+{
+  "project": "{{PROJECT_NAME}}",
+  "version": "0.1.0",
+  "features": [
+    {
+      "id": "F001",
+      "title": "عنوان المهمة الأولى",
+      "status": "pending",
+      "priority": "high",
+      "depends_on": [],
+      "acceptance": "كيف نعرف أنها نجحت — مخرج خام محدد"
+    },
+    {
+      "id": "F002",
+      "title": "مهمة تعتمد على F001",
+      "status": "pending",
+      "priority": "medium",
+      "depends_on": ["F001"],
+      "acceptance": "معيار قبول قابل للتحقق آلياً"
+    }
+  ]
+}
