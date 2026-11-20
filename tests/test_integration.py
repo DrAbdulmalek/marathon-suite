@@ -1,6 +1,6 @@
 # tests/test_integration.py
 """بوابة تكامل marathon-suite — تُشغَّل على النواتين المثبتتين فعليًا
-من وسومهما (v0.4.0 + v0.1.0) لا على نسخ مطورة محليًا.
+من وسومهما (v0.6.0 + v0.1.0) لا على نسخ مطورة محليًا.
 
 كل اختبار هنا حقيقي: لا شبكة، لا نماذج، لا محاكاة للنواتين نفسهما.
 """
@@ -16,7 +16,7 @@ from marathon_suite import build_translation_plan
 
 # ---------- 1. عقود التثبيت: النواتان بالوسوم المتفق عليها ----------
 def test_ocr_core_pinned_version():
-    assert md.version("marathon-ocr-core") == "0.4.0"
+    assert md.version("marathon-ocr-core") == "0.6.0"
 
 
 def test_translation_core_pinned_version():
